@@ -291,14 +291,6 @@ text-shadow:
   color: rgba(240,213,138,0.5);
 }
 
-
-  font-size:10px;
-  letter-spacing:0.3em;
-  text-transform:uppercase;
-
-  color: rgba(240,213,138,0.5);
-}
-
 .hero-bg-mark{
   position: absolute;
   top: 50%;
