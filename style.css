@@ -380,4 +380,5 @@ button {
   font-size: 14px;
   opacity: 0.7;
   letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
