@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cirque Noir Society — Nice</title>
+  <meta name="description" content="Cirque Noir Society — Expérience immersive VIP. Guestlist only. Tables. Performers. Nice." />
+
+  <meta property="og:title" content="Cirque Noir Society — Nice" />
+  <meta property="og:description" content="Expérience immersive VIP. Guestlist only. Tables. Performers." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="og.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<div class="cursorSpotlight" aria-hidden="true"></div>
+
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Cirque Noir Society">
+      <span class="logo" aria-hidden="true">
+        <svg width="38" height="38" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g" x1="10" y1="10" x2="54" y2="54" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#F0D58A"/>
+              <stop offset="1" stop-color="#C8A24A"/>
+            </linearGradient>
+            <mask id="m">
+              <rect width="64" height="64" rx="18" fill="white"/>
+              <path d="M-4 10 L68 46" stroke="black" stroke-width="10" opacity=".6"/>
+              <path d="M-4 22 L68 58" stroke="black" stroke-width="10" opacity=".4"/>
+              <path d="M-4 -2 L68 34" stroke="black" stroke-width="10" opacity=".25"/>
+            </mask>
+          </defs>
+          <rect x="3" y="3" width="58" height="58" rx="18" stroke="url(#g)" stroke-width="2"/>
+          <rect x="6" y="6" width="52" height="52" rx="16" fill="#0B0B0C" mask="url(#m)" opacity=".9"/>
+          <text x="32" y="39" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="url(#g)" letter-spacing="2">CNS</text>
+        </svg>
+      </span>
+      <span class="brand__text">
+        <span class="brand__name">Cirque Noir Society</span>
+        <span class="brand__sub">Nice • Guestlist only</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navigation">
+      <a href="#concept">Concept</a>
+      <a href="#experience">Experience</a>
+      <a href="#guestlist">Guestlist</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="topbar__cta">
+      <a class="btn btn--ghost" href="https://instagram.com/cirquenoirsociety" target="_blank" rel="noreferrer">Instagram</a>
+      <a class="btn btn--gold" href="#guestlist">Apply</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <video class="bgVideo" autoplay muted loop playsinline preload="metadata">
+          <source src="assets/hero.mp4" type="video/mp4">
+        </video>
+        <div class="bgOverlay"></div>
+        <div class="spotlight"></div>
+        <div class="spotlight spotlight--2"></div>
+        <div class="hero-bg-mark">CNS</div>
+      </div>
+
+      <div class="hero__inner">
+        <p class="pill">NICE • VIP • GUESTLIST ONLY • DARK GLAM</p>
+
+        <h1 class="title">
+          <span class="title__top"><span class="mark-red">C</span>IRQUE</span>
+          <span class="title__mid shimmer">NOIR</span>
+          <span class="title__bot"><span class="mark-red">S</span>OCIETY</span>
+        </h1>
+
+        <p class="subtitle">
+          Expérience immersive — <span class="accent">VIP circus experience</span><br />
+          Guestlist only — accès sur validation. <span class="muted">Entry is earned.</span>
+        </p>
+
+        <div class="hero__buttons">
+          <a class="btn btn--gold btn--lg" href="#guestlist">Get on the Guestlist</a>
+          <button class="btn btn--red btn--lg" id="openTableModal" type="button">Table enquiry</button>
+        </div>
+
+        <div class="meta">
+          <div class="meta__card"><div class="k">Next</div><div class="v">Date TBA</div></div>
+          <div class="meta__card"><div class="k">Doors</div><div class="v">23:30</div></div>
+          <div class="meta__card"><div class="k">Capacity</div><div class="v">~300</div></div>
+        </div>
+
+        <div class="scrollHint" aria-hidden="true">
+          <span class="scrollHint__line"></span>
+          <span class="scrollHint__txt">scroll</span>
+        </div>
+
+        
+<div class="hero-lines">
+  <span class="hero-lines__text">down</span>
+</div>
+
+      </div>
+    </section>
+
+    <section class="section" id="concept" data-reveal>
+      <div class="container">
+        <h2 class="h2">Not a party. Une expérience.</h2>
+        <p class="lead">Performers dans la foule. Moments scénarisés. Energie VIP. <span class="muted">Luxury. Chaos. Controlled.</span></p>
+        <div class="grid3">
+          <div class="card"><div class="card__title">Guestlist only</div><div class="card__text">Accès sur validation. Capacité limitée. Early apply recommandé.</div></div>
+          <div class="card"><div class="card__title">Dress to impress</div><div class="card__text">Dark glam uniquement. Tenue élégante exigée. No casual.</div></div>
+          <div class="card"><div class="card__title">Show moments</div><div class="card__text">2 moments forts. Court, intense, pensé pour la salle.</div></div>
+        </div>
+      </div>
+    </section>
+
+    </section>
+
+<section class="section section--alt" id="experience">
+  <div class="container">
+    <h2 class="h2">The Experience</h2>
+
+    <div class="grid3">
+
+      <div class="card">
+        <div class="card__title">Immersive performers</div>
+        <div class="card__text">
+          Performers au milieu du public, interactions directes.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__title">Controlled chaos</div>
+        <div class="card__text">
+          Impression d’imprévu total, mais tout est maîtrisé.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__title">VIP energy</div>
+        <div class="card__text">
+          Sélection à l’entrée, tables limitées, ambiance premium.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <section class="section section--alt" id="guestlist" data-reveal>
+      <div class="container">
+        <h2 class="h2">Guestlist Application</h2>
+        <p class="lead">Validation manuelle. Capacité limitée. Dress code obligatoire.</p>
+
+        <form class="form" id="guestlistForm">
+          <div class="form__grid">
+            <label class="field"><span>Nom / Prénom</span><input required name="name" type="text" placeholder="Ex: Donatien M." /></label>
+            <label class="field"><span>Email</span><input required name="email" type="email" placeholder="ex: you@mail.com" /></label>
+            <label class="field"><span>Instagram @</span><input required name="instagram" type="text" placeholder="@toncompte" /></label>
+            <label class="field"><span>Nombre de personnes</span>
+              <select required name="groupSize"><option value="" disabled selected>Choisir</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7+</option></select>
+            </label>
+            <label class="field field--full"><span>Message (optionnel)</span><textarea name="message" rows="4" placeholder="Anniversaire, table souhaitée, heure d’arrivée…"></textarea></label>
+            <label class="check field--full"><input required type="checkbox" name="dresscode" /><span>Je confirme le dress code <b>Dress to impress — Dark glam only</b> (pas de casual).</span></label>
+          </div>
+          <div class="form__actions">
+            <button class="btn btn--gold btn--lg" type="submit">Submit application</button>
+            <a class="btn btn--ghost" href="https://instagram.com/cirquenoirsociety" target="_blank" rel="noreferrer">DM on Instagram</a>
+          </div>
+          <div class="form__status" id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contact">
+  <div class="container">
+    <h2 class="h2">Contact</h2>
+    <p class="lead">Tables • Collaborations • Performers • Booking</p>
+
+    <div class="chips">
+
+      <a class="chip" href="https://instagram.com/cirquenoirsociety" target="_blank">
+        <span class="chip__k">Instagram</span>
+        <span class="chip__v">@cirquenoirsociety</span>
+      </a>
+
+      <a class="chip" href="mailto:hello@cirquenoirsociety.com">
+        <span class="chip__k">Email</span>
+        <span class="chip__v">hello@cirquenoirsociety.com</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> Cirque Noir Society — Nice</div>
+      <div class="footer__links">
+        <a href="#guestlist">Guestlist</a>
+        <a href="https://instagram.com/cirquenoirsociety" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+    </footer>
+  </main>
+
+  <div class="modal" id="tableModal" aria-hidden="true">
+    <div class="modal__overlay" id="closeTableModal" tabindex="-1"></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="tableTitle">
+      <div class="modal__head">
+        <div>
+          <div class="modal__kicker">Tables — limited</div>
+          <h3 class="modal__title" id="tableTitle">Table enquiry</h3>
+          <p class="modal__sub">VIP only. Demande rapide, réponse rapide.</p>
+        </div>
+        <button class="modal__x" id="xTableModal" aria-label="Close">✕</button>
+      </div>
+
+      <form class="form form--compact" id="tableForm">
+        <label class="field"><span>Nom / Prénom</span><input required name="name" type="text" /></label>
+        <label class="field"><span>Email</span><input required name="email" type="email" /></label>
+        <label class="field"><span>Nb personnes</span>
+          <select required name="groupSize"><option value="" disabled selected>Choisir</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7+</option></select>
+        </label>
+        <label class="field"><span>Budget (optionnel)</span><input name="budget" type="text" /></label>
+        <label class="field"><span>Heure d’arrivée (optionnel)</span><input name="arrival" type="text" /></label>
+        <div class="form__actions"><button class="btn btn--gold" type="submit">Send</button></div>
+        <div class="form__status" id="tableStatus" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
