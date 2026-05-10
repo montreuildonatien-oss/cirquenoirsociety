@@ -282,12 +282,12 @@ text-shadow:
 .hero-lines__text{
   position:absolute;
   left:50%;
-  transform:translateX(-50%);
-
-  
-.hero-lines__text{
   top:50%;
-  transform: translateX(-50%) translateY(120px);
+  transform: translate(-50%, 120px);
+  font-size:10px;
+  letter-spacing:0.3em;
+  text-transform:uppercase;
+  color: rgba(240,213,138,0.5);
 }
 
 
@@ -365,6 +365,25 @@ header, nav {
 
   .section {
     padding: 40px 16px;
+  }
+}
+@media (max-width: 520px){
+  .topbar{
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .topbar__cta{
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+    max-width: 100%;
+  }
+
+  .topbar__cta .btn{
+    padding: 10px 12px;
+    font-size: 13px;
   }
 }
 
