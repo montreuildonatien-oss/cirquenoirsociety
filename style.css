@@ -386,4 +386,27 @@ header, nav {
     font-size: 13px;
   }
 }
+@media (max-width: 480px){
+  .topbar{
+    flex-wrap: nowrap;
+    padding: 10px 12px;
+  }
+
+  .topbar__cta{
+    gap: 6px;
+  }
+
+  .topbar__cta .btn{
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+
+  .brand__name{
+    font-size: 14px;
+  }
+
+  .brand__sub{
+    font-size: 10px;
+  }
+}
 
