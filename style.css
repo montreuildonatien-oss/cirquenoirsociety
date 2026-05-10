@@ -11,13 +11,13 @@ position: relative;
 overflow: hidden;
 }
 .btn:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.22)}.btn--lg{padding:14px 18px;border-radius:18px;font-size:15px}.btn--ghost{background:rgba(255,255,255,.02)}
-.btn--gold{background:linear-gradient(135deg,rgba(240,213,138,1),rgba(200,162,74,1));color:#16110A;border-color:rgba(200,162,74,.75)}
+.btn--gold{background:linear-gradient(135deg,rgba(240,213,138,1),rgba(200,162,74,1));color:#16110A;border-color:rgba(200,162,74,.75);box-shadow: 0 10px 40px rgba(240,213,138,0.25);}
 .btn--red{background:linear-gradient(135deg,rgb(101, 9, 26),rgba(122,11,27,1));border-color:rgba(177,14,45,.6)}
 .hero{min-height:100vh;padding:120px 0 70px;position:relative;z-index:1;display:grid;place-items:center}
 .hero__bg{position:absolute;inset:0;overflow:hidden;z-index:0}
 .bgVideo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.2;filter:brightness(.5)}
 .bgOverlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.75))}
-.hero__inner{width:100%;text-align:center;padding:0 18px;max-width:980px;position:relative;z-index:2}
+.hero__inner{width:100%;text-align:center;padding:0 18px;max-width:980px;position:relative;z-index:2;transform: translateY(-10px);}
 .pill{display:inline-flex;padding:8px 12px;border:1px solid rgba(200,162,74,.35);border-radius:999px;color:rgba(240,213,138,.95);letter-spacing:.12em;font-size:11px;margin:0 0 18px;text-transform:uppercase;background:rgba(0,0,0,.18)}
 .title{margin:0;font-family:var(--serif);line-height:.92;letter-spacing:.06em;text-transform:uppercase}.title__top{display:block;font-size:46px;color:rgba(244,240,234,.85)}
 .title__mid{
