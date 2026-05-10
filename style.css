@@ -377,7 +377,7 @@ button {
 
 
 .subtitle{
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: 0.03em;
   line-height: 1.6;
   opacity: 0.85;
@@ -385,7 +385,7 @@ button {
 
 .subtitle.secondary{
   margin-top: 6px;
-  font-size: 9px;
+  font-size: 7px;
   letter-spacing: 0.12em;
   opacity: 0.45;
 }
