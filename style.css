@@ -272,12 +272,13 @@ text-shadow:
 }
 
 .hero-lines::before{
-  left:-120px;
+  left:0;
 }
 
 .hero-lines::after{
-  right:-120px;
+  right:0;
 }
+
 
 .hero-lines__text{
   position:absolute;
@@ -409,4 +410,9 @@ header, nav {
     font-size: 10px;
   }
 }
-
+@media (max-width: 768px){
+  .hero-lines::before,
+  .hero-lines::after{
+    display:none;
+  }
+}
