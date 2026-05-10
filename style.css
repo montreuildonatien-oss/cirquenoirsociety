@@ -353,3 +353,18 @@ button {
   padding: 0 16px;
 }
 
+header, nav {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 80px 16px 40px;
+  }
+
+  .section {
+    padding: 40px 16px;
+  }
+}
+
