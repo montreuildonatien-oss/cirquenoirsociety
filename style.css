@@ -377,10 +377,10 @@ button {
 
 
 .subtitle{
-  font-weight: 200;
+  font-weight: 150;
   letter-spacing: 0.03em;
   line-height: 1.6;
-  opacity: 0.85;
+  opacity: 0.45;
 }
 
 .subtitle.secondary{
