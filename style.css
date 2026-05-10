@@ -389,3 +389,11 @@ button {
   letter-spacing: 0.12em;
   opacity: 0.45;
 }
+
+.subtitle.tertiary{
+  margin-top: 2px;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+  opacity: 0.35;
+  text-transform: uppercase;
+}
