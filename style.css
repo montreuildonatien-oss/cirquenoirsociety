@@ -375,10 +375,17 @@ button {
   }
 }
 
+
+.subtitle{
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
 .subtitle.secondary{
   margin-top: 6px;
-  font-size: 14px;
-  opacity: 0.7;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  opacity: 0.45;
 }
