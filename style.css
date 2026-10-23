@@ -346,7 +346,11 @@ button {
     font-size: 13px;
   }
 }
-
+@media (max-width: 480px){
+  .topbar{
+    flex-wrap: nowrap;
+    padding: 10px 12px;
+  }
 
   .topbar__cta{
     gap: 6px;
