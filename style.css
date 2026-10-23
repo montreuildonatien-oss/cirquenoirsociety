@@ -406,7 +406,6 @@ button {
   height: auto;
   display: block;
   margin: 0 auto 0px;
-  transform: translateY(30px);
 }
 
 @media (max-width: 768px) {
