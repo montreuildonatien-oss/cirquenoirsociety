@@ -408,11 +408,7 @@ button {
   margin: 0 auto 0px;
 }
 
-@media (max-width: 768px) {
-  .pill {
-    display: none;
-  }
-}
+
 
 @media (max-width: 768px) {
 
