@@ -414,3 +414,22 @@ button {
   }
 }
 
+@media (max-width: 768px) {
+
+  .hero-logo{
+    width: 150px;
+  }
+
+  .title__top{
+    font-size: 34px;
+  }
+
+  .title__mid{
+    font-size: 70px;
+  }
+
+  .title__bot{
+    font-size: 28px;
+  }
+
+}
