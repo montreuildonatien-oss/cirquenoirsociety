@@ -435,3 +435,9 @@ button {
     display:none;
   }
 }
+
+.modal-image{
+  width: 220px;
+  display:block;
+  margin: 20px auto;
+}
