@@ -395,9 +395,9 @@ button {
 
 .subtitle.tertiary{
   margin-top: 2px;
-  font-size: 12px;
+  font-size: 10px;
   letter-spacing: 0.18em;
-  opacity: 0.35;
+  opacity: 0.30;
   text-transform: uppercase;
 }
 
@@ -405,7 +405,7 @@ button {
   width: 190px;
   height: auto;
   display: block;
-  margin: 0 auto -35px;
+  margin: 0 auto -37px;
 }
 
 
