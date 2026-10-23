@@ -32,8 +32,8 @@ overflow: hidden;
 
   
 text-shadow:
-  0 0 6px rgba(193, 167, 95, 0.35),
-  0 0 14px rgba(163, 136, 61, 0.25);
+  0 0 4px rgba(240,213,138,0.25),
+  0 0 8px rgba(240,213,138,0.15);
 
 
   animation: glowPulse 2.5s ease-in-out infinite;
