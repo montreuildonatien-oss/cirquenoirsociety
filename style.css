@@ -71,7 +71,7 @@ text-shadow:
 .card{background:linear-gradient(180deg,rgba(12,12,17,.78),rgba(12,12,17,.55));border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:18px 16px;box-shadow:var(--shadow)}
 .card__title{font-weight:850;color:rgba(240,213,138,.95);margin-bottom:6px}.card__text{color:rgba(244,240,234,.72);line-height:1.55}
 .form{border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(12,12,17,.70),rgba(12,12,17,.48));border-radius:26px;padding:18px;box-shadow:var(--shadow)}
-.form--compact{padding:14px}.form__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.form--compact{padding:24px}.form__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .field{display:flex;flex-direction:column;gap:6px}.field span{font-size:12px;color:rgba(244,240,234,.70)}
 .field input,.field select,.field textarea{border-radius:16px;border:1px solid rgba(255,255,255,.10);background:rgba(0,0,0,.25);color:var(--text);padding:12px 12px;outline:none;font-family:var(--sans)}
 .field input:focus,.field select:focus,.field textarea:focus{border-color:rgba(200,162,74,.35);box-shadow:0 0 0 4px rgba(200,162,74,.10)}
@@ -84,7 +84,7 @@ text-shadow:
 .footer__links{display:flex;gap:12px}.footer a{text-decoration:none;color:rgba(244,240,234,.72)}.footer a:hover{color:var(--text)}
 .modal{position:fixed;inset:0;display:none;z-index:20}.modal[aria-hidden='false']{display:block}
 .modal__overlay{position:absolute;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(6px)}
-.modal__panel{position:relative;margin:10svh auto 0;width:min(560px,calc(100% - 24px));border-radius:26px;border:1px solid rgba(255,255,255,.10);background:linear-gradient(180deg,rgba(12,12,17,.92),rgba(12,12,17,.72));box-shadow:var(--shadow);padding:16px}
+.modal__panel{position:relative;margin:10svh auto 0;width:min(800px,calc(100% - 24px));min-height:410px;border-radius:26px;border:1px solid rgba(255,255,255,.10);background:linear-gradient(180deg,rgba(12,12,17,.92),rgba(12,12,17,.72));box-shadow:var(--shadow);padding:16px}
 .modal__head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}
 .modal__kicker{font-size:12px;color:rgba(240,213,138,.85);letter-spacing:.14em;text-transform:uppercase}
 .modal__title{margin:4px 0 0;font-family:var(--serif);font-size:24px}
@@ -437,7 +437,10 @@ button {
 }
 
 .modal-image{
-  width: 220px;
-  display:block;
-  margin: 20px auto;
+  position:absolute;
+  right:20px;
+  bottom:30px;
+  width:250px;
+  opacity:0.35;
+  pointer-events:none;
 }
