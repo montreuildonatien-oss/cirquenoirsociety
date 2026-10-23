@@ -236,30 +236,52 @@ Early access to upcoming experiences.</p>
   </main>
 
   <div class="modal" id="tableModal" aria-hidden="true">
-    <div class="modal__overlay" id="closeTableModal" tabindex="-1"></div>
-    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="tableTitle">
-      <div class="modal__head">
-        <div>
-          <div class="modal__kicker">Tables — limited</div>
-          <h3 class="modal__title" id="tableTitle">Table enquiry</h3>
-          <p class="modal__sub">VIP only. Demande rapide, réponse rapide.</p>
-        </div>
-        <button class="modal__x" id="xTableModal" aria-label="Close">✕</button>
+  <div class="modal__overlay" id="closeTableModal" tabindex="-1"></div>
+
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="tableTitle">
+
+    <div class="modal__head">
+      <div>
+        <div class="modal__kicker">Behind the Curtain</div>
+
+        <h3 class="modal__title" id="tableTitle">
+          Welcome to CIRQUE NOIR
+        </h3>
+
+        <p class="modal__sub">
+          A world built around mystery, celebration and unforgettable experiences.
+        </p>
       </div>
 
-      <form class="form form--compact" id="tableForm">
-        <label class="field"><span>Nom / Prénom</span><input required name="name" type="text" /></label>
-        <label class="field"><span>Email</span><input required name="email" type="email" /></label>
-        <label class="field"><span>Nb personnes</span>
-          <select required name="groupSize"><option value="" disabled selected>Choisir</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7+</option></select>
-        </label>
-        <label class="field"><span>Budget (optionnel)</span><input name="budget" type="text" /></label>
-        <label class="field"><span>Heure d’arrivée (optionnel)</span><input name="arrival" type="text" /></label>
-        <div class="form__actions"><button class="btn btn--gold" type="submit">Send</button></div>
-        <div class="form__status" id="tableStatus" role="status" aria-live="polite"></div>
-      </form>
+      <button class="modal__x" id="xTableModal" aria-label="Close">✕</button>
     </div>
+
+    <div class="form form--compact">
+
+      <p>
+        CIRQUE NOIR was born from a simple idea:
+      </p>
+
+      <p>
+        Creating real experiences where mystery, celebration and human connection meet.
+      </p>
+
+      <p>
+        More than an event.<br>
+        More than a venue.<br>
+        A world in the making.
+      </p>
+
+      <div class="form__actions">
+        <a class="btn btn--gold" href="#The Cercle Noir">
+          Join the Circle
+        </a>
+      </div>
+
+    </div>
+
   </div>
+</div>
 
   <script src="script.js"></script>
 </body>
