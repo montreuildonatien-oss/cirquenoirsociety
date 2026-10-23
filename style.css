@@ -444,3 +444,7 @@ button {
   opacity:0.35;
   pointer-events:none;
 }
+
+#cercle-noir{
+  scroll-margin-top: 120px;
+}
