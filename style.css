@@ -429,3 +429,9 @@ button {
   }
 
 }
+
+@media (max-width: 768px) {
+  .pill{
+    display:none;
+  }
+}
