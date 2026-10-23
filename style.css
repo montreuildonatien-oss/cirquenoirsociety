@@ -320,7 +320,7 @@ button {
 
 @media (max-width: 768px) {
   .hero {
-    padding: 80px 16px 40px;
+    padding: 20px 16px 20px;
   }
 
   .section {
@@ -409,4 +409,18 @@ button {
   transform: translateY(30px);
 }
 
+@media (max-width: 768px) {
+  .pill {
+    display: none;
+  }
+}
 
+@media (max-width: 768px) {
+  .hero-logo {
+    width: 50px !important;
+  }
+
+  .pill {
+    display: none !important;
+  }
+}
