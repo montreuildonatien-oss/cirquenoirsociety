@@ -366,8 +366,6 @@ button {
 @media (max-width: 768px) {
   .hero {
     padding: 90px 16px 40px;
-    .experience-mark img{
-  width:150px;
   }
 
   .section {
@@ -535,4 +533,11 @@ button {
     width:100%;
     justify-content:center;
   }
+}
+@media (max-width: 768px){
+
+  .experience-mark img{
+    width:250px;
+  }
+
 }
