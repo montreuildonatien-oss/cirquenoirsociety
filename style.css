@@ -517,3 +517,7 @@ button {
 .experience-mark img{
   width:500px;
 }
+
+#behind-the-curtain{
+  scroll-margin-top: 160px;
+}
