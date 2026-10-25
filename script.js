@@ -21,6 +21,14 @@ const modal = document.getElementById('tableModal');
 const openBtn = document.getElementById('openTableModal');
 const closeOverlay = document.getElementById('closeTableModal');
 const closeX = document.getElementById('xTableModal');
+const modalJoinCircle = document.getElementById('modalJoinCircle');
+closeX?.addEventListener('click', closeModal);
+modalJoinCircle?.addEventListener('click', () => {
+  closeModal();
+
+  document.getElementById('cercle-noir')
+    ?.scrollIntoView({ behavior: 'smooth' });
+});
 
 function openModal(){ modal.setAttribute('aria-hidden','false'); document.body.style.overflow='hidden'; }
 function closeModal(){ modal.setAttribute('aria-hidden','true'); document.body.style.overflow=''; }
