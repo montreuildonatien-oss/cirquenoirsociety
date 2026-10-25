@@ -367,7 +367,7 @@ button {
   .hero {
     padding: 90px 16px 40px;
     .experience-mark img{
-  width:300px;
+  width:150px;
   }
 
   .section {
@@ -395,7 +395,7 @@ button {
 }
 @media (max-width: 480px){
   .topbar{
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 8px 12px;
   }
 
@@ -522,4 +522,17 @@ button {
 
 #behind-the-curtain{
   scroll-margin-top: 160px;
+}
+
+@media (max-width: 480px){
+  .topbar{
+    flex-wrap: wrap;
+    justify-content:center;
+    gap:10px;
+  }
+
+  .topbar__cta{
+    width:100%;
+    justify-content:center;
+  }
 }
