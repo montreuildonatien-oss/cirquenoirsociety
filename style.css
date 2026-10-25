@@ -525,7 +525,6 @@ button {
 @media (max-width: 480px){
   .topbar{
     flex-wrap: wrap;
-    justify-content:center;
     gap:10px;
   }
 
