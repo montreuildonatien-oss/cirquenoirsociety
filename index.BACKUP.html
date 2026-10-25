@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cirque Noir Society — Nice</title>
+  <meta name="description" content="Cirque Noir Society — A secret society built around mystery, celebration and unforgettable experiences." />
+
+  <meta property="og:title" content="Cirque Noir Society — Nice" />
+  <meta property="og:description" content="A secret society built around mystery, celebration and unforgettable experiences." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="og.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<div class="cursorSpotlight" aria-hidden="true"></div>
+
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Cirque Noir Society">
+      <span class="logo" aria-hidden="true">
+        <svg width="38" height="38" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g" x1="10" y1="10" x2="54" y2="54" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#F0D58A"/>
+              <stop offset="1" stop-color="#C8A24A"/>
+            </linearGradient>
+            <mask id="m">
+              <rect width="64" height="64" rx="18" fill="white"/>
+              <path d="M-4 10 L68 46" stroke="black" stroke-width="10" opacity=".6"/>
+              <path d="M-4 22 L68 58" stroke="black" stroke-width="10" opacity=".4"/>
+              <path d="M-4 -2 L68 34" stroke="black" stroke-width="10" opacity=".25"/>
+            </mask>
+          </defs>
+          <rect x="3" y="3" width="58" height="58" rx="18" stroke="url(#g)" stroke-width="2"/>
+          <rect x="6" y="6" width="52" height="52" rx="16" fill="#0B0B0C" mask="url(#m)" opacity=".9"/>
+          <text x="32" y="39" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="url(#g)" letter-spacing="2">CNS</text>
+        </svg>
+      </span>
+      <span class="brand__text">
+        <span class="brand__name">Cirque Noir Society</span>
+        <span class="brand__sub">Based in Nice</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navigation">
+      <a href="#behind-the-curtain">Behind the curtain</a>
+      <a href="#experience">Experience</a>
+      <a href="#cercle-noir">The Cercle Noir</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="topbar__cta">
+      <a class="btn btn--ghost" href="https://instagram.com/cirquenoirsociety" target="_blank" rel="noreferrer">Instagram</a>
+      <a class="btn btn--gold" href="#cercle-noir">The Cercle Noir</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <video class="bgVideo" autoplay muted loop playsinline preload="metadata">
+          <source src="assets/hero.mp4" type="video/mp4">
+        </video>
+        <div class="bgOverlay"></div>
+        <div class="spotlight"></div>
+        <div class="spotlight spotlight--2"></div>
+        <div class="hero-bg-mark">CNS</div>
+      </div>
+
+      <div class="hero__inner">
+        <p class="pill">• Celebration • Mystery</p>
+        <p class="pill">Real experience</p>
+
+        <img src="assets/logo ss ecrit ss fond.png"
+     alt="Cirque Noir Society"
+     class="hero-logo">
+     <div class="logo-gap"></div>
+
+        <h1 class="title">
+          <span class="title__top"><span class="mark-red">C</span>IRQUE</span>
+          <span class="title__mid shimmer">NOIR</span>
+          <span class="title__bot"><span class="mark-red">S</span>OCIETY</span>
+        </h1>
+
+        <div class="hero__buttons">
+          <a class="btn btn--gold btn--lg" href="#cercle-noir">Join the circle</a>
+          <button class="btn btn--red btn--lg" id="openTableModal" type="button">Discover the world</button>
+        </div>
+        
+
+
+<p class="subtitle">
+</p>
+
+
+
+<p class="subtitle tertiary">
+  Based in Nice, France
+</p>
+
+
+
+
+        <div class="meta">
+          <div class="meta__card"><div class="k">Stage</div><div class="v">Early chapter</div></div>
+          <div class="meta__card"><div class="k">Access</div><div class="v">By invitation</div></div>
+          <div class="meta__card"><div class="k">Community</div><div class="v">The Cercle Noir</div></div>
+        </div>
+
+        <div class="scrollHint" aria-hidden="true">
+          <span class="scrollHint__line"></span>
+          <span class="scrollHint__txt">scroll</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section" id="behind-the-curtain" data-reveal>
+      <div class="container">
+        <h2 class="h2">Behind the Curtain</h2>
+        <p class="lead">CIRQUE NOIR was born from a simple idea: <br><br>
+Creating real experiences where mystery, celebration and human connection meet.
+<br><br>
+More than an event. More than a venue.
+<br>
+A world in the making.
+</p>
+
+        
+        <div class="grid3">
+          <div class="card"><div class="card__title">Vision</div><div class="card__text">An immersive world in creation.</div></div>
+          <div class="card"><div class="card__title">Origin</div><div class="card__text">Born in Nice, France.</div></div>
+          <div class="card"><div class="card__title">Community</div><div class="card__text">The Cercle Noir.</div></div>
+        </div>
+      </div>
+    </section>
+
+    </section>
+
+<section class="section section--alt" id="experience">
+  <div class="container">
+    <h2 class="h2">The Experience</h2>
+
+    <div class="grid3">
+
+      <div class="card">
+        <div class="card__title">Immersive performers</div>
+        <div class="card__text">
+          Performers among the crowd, direct interactions.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__title">Controlled chaos</div>
+        <div class="card__text">
+          A feeling of total unpredictability, carefully orchestrated.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__title">VIP energy</div>
+        <div class="card__text">
+          Selective access, limited tables, premium atmosphere.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <section class="section section--alt" id="cercle-noir" data-reveal>
+      <div class="container">
+        <h2 class="h2">The Cercle Noir</h2>
+        <p class="lead">
+Exclusive updates.
+Future invitations.
+Early access to upcoming experiences.</p>
+
+        <form class="form" id="TheCercleNoirForm">
+          <div class="form__grid">
+            <label class="field"><span>Full name</span><input required name="name" type="text" placeholder="Ex: Donatien M." /></label>
+            <label class="field"><span>Email</span><input required name="email" type="email" placeholder="ex: you@mail.com" /></label>
+            <label class="field"><span>Instagram @</span><input required name="instagram" type="text" placeholder="@toncompte" /></label>
+            
+            <label class="field field--full"><span>Optionnal message</span><textarea name="message" rows="4" placeholder="What attracts you to CIRQUE NOIR?"></textarea></label>
+            <label class="check field--full"><input required type="checkbox" name="dresscode" /><span>I am ready to step behind the curtain.</span></label>
+          </div>
+          <div class="form__actions">
+            <button class="btn btn--gold btn--lg" type="submit">Join the Circle</button>
+            <a class="btn btn--ghost" href="https://instagram.com/cirquenoirsociety" target="_blank" rel="noreferrer">Follow on Instagram</a>
+          </div>
+          <div class="form__status" id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="contact">
+  <div class="container">
+    <h2 class="h2">Contact</h2>
+    <p class="lead">• Collaborations • Performers • Booking</p>
+
+    <div class="chips">
+
+      <a class="chip" href="https://instagram.com/cirquenoirsociety" target="_blank">
+        <span class="chip__k">Instagram</span>
+        <span class="chip__v">@cirquenoirsociety</span>
+      </a>
+
+      <a class="chip" href="mailto:hello@cirquenoirsociety.com">
+        <span class="chip__k">Email</span>
+        <span class="chip__v">hello@cirquenoirsociety.com</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> Cirque Noir Society — Nice</div>
+      <div class="footer__links">
+        <a href="#cercle-noir">The Cercle Noir</a>
+        <a href="https://instagram.com/cirquenoirsociety" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+    </footer>
+  </main>
+
+  <div class="modal" id="tableModal" aria-hidden="true">
+  <div class="modal__overlay" id="closeTableModal" tabindex="-1"></div>
+
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="tableTitle">
+
+    <div class="modal__head">
+      <div>
+        <div class="modal__kicker">Behind the Curtain</div>
+
+      <h3 class="modal__title">
+  THE STORY BEGINS
+</h3>
+
+        <p class="modal__sub">
+      
+<p>Not everyone finds this door.</p>
+
+
+          <img src="assets/logoclown.png" alt="Cirque Noir" class="modal-image">
+        </p>
+      </div>
+
+      <button class="modal__x" id="xTableModal" aria-label="Close">✕</button>
+    </div>
+
+<div class="modal-content">
+
+<p>The first chapter of CIRQUE NOIR has only just begun.</p>
+
+<p>
+More than an event.<br>
+More than a venue.<br>
+A world in the making.
+</p>
+
+<div class="form__actions">
+  <a class="btn btn--gold" href="#cercle-noir">
+    Join the Circle
+  </a>
+</div>
+
+</div>
+
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+</body>
+</html>
