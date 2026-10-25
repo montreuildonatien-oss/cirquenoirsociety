@@ -1,5 +1,14 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
+const SUPABASE_URL = 'https://fynuugsxpmkrgdavzgvu.supabase.co';
+
+const SUPABASE_KEY = 'sb_publishable_BfQNjLHfsNUpqvFnPbG19w_tJOmuwnZ';
+
+const supabaseClient = supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);
+
 // Reveal
 const revealEls = document.querySelectorAll('[data-reveal]');
 const io = new IntersectionObserver((entries) => {
@@ -26,25 +35,35 @@ function mailto(subject, body){
   window.location.href = `mailto:${encodeURIComponent(DEST_EMAIL)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 
-const guestlistForm = document.getElementById('guestlistForm');
+const cercleNoirForm = document.getElementById('TheCercleNoirForm');
 const formStatus = document.getElementById('formStatus');
 
-guestlistForm?.addEventListener('submit', (e) => {
+cercleNoirForm?.addEventListener('submit', async (e) => {
   e.preventDefault();
-  const data = new FormData(guestlistForm);
-  formStatus.textContent = 'Prêt — ouverture de ton client mail…';
-  const body = `GUESTLIST APPLICATION
 
-Nom: ${data.get('name')}
-Email: ${data.get('email')}
-Instagram: ${data.get('instagram')}
-Nb: ${data.get('groupSize')}
+  const data = new FormData(cercleNoirForm);
 
-Message:
-${data.get('message') || '-'}
-`;
-  mailto('CNS — Guestlist Application', body);
-  guestlistForm.reset();
+  formStatus.textContent = 'Sending...';
+
+  const { error } = await supabaseClient
+    .from('cercle-noir')
+    .insert([
+      {
+        name: data.get('name'),
+        email: data.get('email'),
+        instagram: data.get('instagram'),
+        message: data.get('message')
+      }
+    ]);
+
+  if (error) {
+    console.error(error);
+    formStatus.textContent = 'An error occurred.';
+    return;
+  }
+
+  formStatus.textContent = 'Welcome to The Cercle Noir.';
+  cercleNoirForm.reset();
 });
 
 const tableForm = document.getElementById('tableForm');
