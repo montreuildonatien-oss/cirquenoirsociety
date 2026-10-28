@@ -361,7 +361,7 @@ rgba(12,12,17,.45)
   font-size: 420px;
   font-weight: 700;
 
-  color: rgba(122,11,27,0.05); /* ultra discret */
+  color: rgba(122,11,27,0.04); /* ultra discret */
 
   letter-spacing: 0.1em;
 
@@ -537,7 +537,7 @@ button {
 
 .experience-mark img{
   width:500px;
-  opacity:0.15;
+  opacity:0;
 }
 
 #behind-the-curtain{
@@ -667,4 +667,73 @@ body{
     grid-template-columns:1fr;
   }
 
+  #within{
+  scroll-margin-top:500px;
+}
+
+
+.within-sparkles{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+}
+
+#within{
+  position:relative;
+  overflow:hidden;
+}
+}
+
+#within{
+  position:relative;
+  overflow:hidden;
+}
+
+#within .container{
+  position:relative;
+  z-index:2;
+}
+
+#within::after{
+  content:"";
+  position:absolute;
+
+  left:50%;
+  top:50%;
+
+  width:2000px;
+  height:2000px;
+
+  transform:translate(-50%,-50%);
+
+  background:radial-gradient(
+    ellipse,
+    rgba(240,213,138,.20) 0%,
+    rgba(240,213,138,.04) 35%,
+    transparent 75%
+  );
+
+  filter:blur(120px);
+
+  pointer-events:none;
+  z-index:1;
+
+  animation: withinGlow 18s ease-in-out infinite;
+}
+
+@keyframes withinGlow{
+
+  0%,100%{
+    opacity:.2;
+    transform:
+      translate(-50%,-50%)
+      scale(1);
+  }
+
+  50%{
+    opacity:1;
+    transform:
+      translate(-50%,-50%)
+      scale(1.2);
+  }
 }
