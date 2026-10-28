@@ -664,4 +664,10 @@ body{
     min-width:auto;
   }
 
+  @media (max-width:768px){
+
+  .form__grid{
+    grid-template-columns:1fr;
+  }
+
 }
