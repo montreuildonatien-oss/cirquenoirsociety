@@ -643,9 +643,25 @@ body{
 .intro-cards{
   display:flex;
   gap:16px;
+  flex-wrap:wrap;
 }
 
 .intro-cards .card{
   flex:none;
   min-width:120px;
+}
+
+
+@media (max-width:768px){
+
+  .intro-cards{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:10px;
+  }
+
+  .intro-cards .card{
+    min-width:auto;
+  }
+
 }
