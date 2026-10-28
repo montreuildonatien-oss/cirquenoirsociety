@@ -1,4 +1,4 @@
-:root{--bg:#07070A;--panel:#0C0C11;--text:#F4F0EA;--muted:rgba(244,240,234,.72);--gold:#B89147;--gold2:#C8A96B;--velvet:#7A0B1B;--red:#B10E2D;--line:rgba(255,255,255,.08);--shadow:0 20px 80px rgba(0,0,0,.55);--serif:'Playfair Display',serif;--sans:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+:root{--bg:#07070A;--text:#F4F0EA;--muted:rgba(244,240,234,.72);--gold:#B89147;--gold2:#C8A96B;--shadow:0 20px 80px rgba(0,0,0,.55);--serif:'Playfair Display',serif;--sans:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:var(--sans);color:var(--text);background:radial-gradient(1200px 900px at 70% 15%,rgba(122,11,27,.25),transparent 60%),radial-gradient(900px 700px at 20% 85%,rgba(200,162,74,.18),transparent 55%),var(--bg);overflow-x:hidden}
 a{color:inherit}
 .noise{position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.12'/%3E%3C/svg%3E");mix-blend-mode:overlay;pointer-events:none;opacity:.65;z-index:0}
@@ -512,7 +512,6 @@ button {
 
 #cercle-noir{
   scroll-margin-top: 120px;
-  scroll-margin-top:120px;
   margin-bottom:270px;
 }
 
