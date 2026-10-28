@@ -512,6 +512,8 @@ button {
 
 #cercle-noir{
   scroll-margin-top: 120px;
+  scroll-margin-top:120px;
+  margin-bottom:270px;
 }
 
 .modal-content{
@@ -624,9 +626,10 @@ body{
   line-height:1.9;
 }
 
-
-#contact{
-  margin-top: 270px;
+#reach{
+  scroll-margin-top:120px;
+  padding-top:270px;
+  padding-bottom:100px;
 }
 
 .committee-note{
