@@ -632,3 +632,11 @@ body{
   margin-top: 270px;
 }
 
+.committee-note{
+    margin-top: 22px;
+    font-size: 10px;
+    line-height: 1.8;
+    color: rgba(244,240,234,.26);
+    text-align: center;
+}
+
