@@ -111,7 +111,11 @@ text-shadow:
 .h2{font-family:var(--serif);letter-spacing:.02em;margin:0 0 12px;font-size:34px}
 .lead{margin:0 0 22px;color:var(--muted);font-size:16px;line-height:1.65;max-width:860px}
 .grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.card{background:linear-gradient(180deg,rgba(122,11,27,.16),rgba(12,12,17,.55));border:1px solid rgba(122,11,27,.28);border-radius:22px;padding:18px 16px;box-shadow:var(--shadow)}
+.card{background:linear-gradient(
+180deg,
+rgba(122,11,27,.08),
+rgba(12,12,17,.45)
+),rgba(12,12,17,.55));border:1px solid rgba(122,11,27,.08);border-radius:22px;padding:18px 16px;box-shadow:var(--shadow)}
 .card__title{font-weight:850;color:rgba(240,213,138,.95);margin-bottom:6px;letter-spacing: .05em}.card__text{color:rgba(244,240,234,.72);line-height:1.55}
 .form{border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(12,12,17,.70),rgba(12,12,17,.48));border-radius:26px;padding:18px;box-shadow:var(--shadow)}
 .form--compact{padding:24px}.form__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
@@ -532,6 +536,7 @@ button {
 
 .experience-mark img{
   width:500px;
+  opacity:0.15;
 }
 
 #behind-the-curtain{
