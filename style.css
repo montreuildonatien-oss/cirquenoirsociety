@@ -115,7 +115,7 @@ text-shadow:
 180deg,
 rgba(122,11,27,.08),
 rgba(12,12,17,.45)
-),rgba(12,12,17,.55));border:1px solid rgba(122,11,27,.08);border-radius:22px;padding:18px 16px;box-shadow:var(--shadow)}
+),rgba(12,12,17,.55));border:1px solid rgba(122,11,27,.30);border-radius:22px;padding:8px 12px;box-shadow:var(--shadow)}
 .card__title{font-weight:850;color:rgba(240,213,138,.95);margin-bottom:6px;letter-spacing: .05em}.card__text{color:rgba(244,240,234,.72);line-height:1.55}
 .form{border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(12,12,17,.70),rgba(12,12,17,.48));border-radius:26px;padding:18px;box-shadow:var(--shadow)}
 .form--compact{padding:24px}.form__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
@@ -640,3 +640,12 @@ body{
     text-align: center;
 }
 
+.intro-cards{
+  display:flex;
+  gap:16px;
+}
+
+.intro-cards .card{
+  flex:none;
+  min-width:120px;
+}
