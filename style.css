@@ -615,3 +615,11 @@ body{
 .circle-intro{
     margin-top: 80px;
 }
+
+.reach-links a{
+  display:block;
+  font-size:14px;
+  color:rgba(244,240,234,.62);
+  font-weight:400;
+  line-height:1.9;
+}
