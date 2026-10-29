@@ -736,7 +736,20 @@ body{
   #within{
   scroll-margin-top:500px;
 }
+}
 /* END MOBILE - CARDS + FORM */
+
+
+/* WITHIN SECTION */
+#within{
+  position:relative;
+  overflow:hidden;
+
+  padding-top:140px;
+  padding-bottom:200px;
+    min-height:700px;
+
+}
 
 /* =====================================
    WITHIN - HALO
@@ -774,7 +787,7 @@ body{
 
   background:radial-gradient(
     ellipse,
-    rgba(240,213,138,.20) 0%,
+    rgba(229, 193, 93, 0.2) 0%,
     rgba(240,213,138,.04) 35%,
     transparent 75%
   );
@@ -784,7 +797,7 @@ body{
   pointer-events:none;
   z-index:1;
 
-  animation: withinGlow 18s ease-in-out infinite;
+  animation: withinGlow 25s ease-in-out infinite;
 }
 
 @keyframes withinGlow{
@@ -799,11 +812,81 @@ body{
   50%{
     opacity:1;
     transform:
-      translate(-50%,-50%)
-      scale(1.2);
+      translate(-40%,-50%)
+      scale(1.08);
   }
 }
 
 /* =====================================
    END WITHIN - HALO
 ===================================== */
+
+
+/* =====================================
+    WITHIN - HALO ROUGE
+===================================== */
+#within::before{
+  content:"";
+  position:absolute;
+
+  left:20%;
+  top:30%;
+
+  width:1200px;
+  height:1200px;
+
+  transform:translate(-50%,-50%);
+
+  background:radial-gradient(
+    ellipse,
+    rgba(114, 11, 27, 0.18)0%,
+    rgba(150, 35, 50, 0.12) 35%,
+    transparent 70%
+  );
+
+  filter:blur(100px);
+
+  pointer-events:none;
+
+animation: withinGlow 25s ease-in-out infinite;
+
+}
+
+@keyframes withinGlow{
+
+  0%,100%{
+    opacity:.2;
+    transform:
+      translate(-50%,-50%)
+      scale(1);
+  }
+
+  50%{
+    opacity:1;
+    transform:
+      translate(-40%,-50%)
+      scale(1.08);
+  }
+}
+
+/* =====================================
+    WITHIN - mot caché
+===================================== */
+.within-word{
+  position:absolute;
+
+  left:50%;
+  top:70%;
+
+  transform:translate(-50%,-50%);
+
+  font-size:400px;
+
+color:rgba(240,213,138,.02);
+
+  z-index:0;
+
+  pointer-events:none;
+  filter:blur(4px);
+  font-size:500px;
+}
