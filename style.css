@@ -882,11 +882,11 @@ animation: withinGlow 25s ease-in-out infinite;
 
   font-size:400px;
 
-color:rgba(240,213,138,.02);
+color:rgba(235, 212, 147, 0.02);
 
   z-index:0;
 
   pointer-events:none;
-  filter:blur(4px);
+  filter:blur(7px);
   font-size:500px;
 }
