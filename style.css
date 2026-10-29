@@ -102,21 +102,33 @@ text-shadow:
   font-weight:800;
   letter-spacing:.03em;
 }
+
+/* HERO - SCROLL INDICATOR */
 .scrollHint{margin-top:34px;display:flex;flex-direction:column;align-items:center;gap:10px;opacity:.6}
 .scrollHint__line{width:1px;height:36px;background:linear-gradient(180deg,rgba(240,213,138,0),rgba(240,213,138,.9),rgba(240,213,138,0));animation:pulse 1.8s ease-in-out infinite}
 .scrollHint__txt{font-size:11px;letter-spacing:.28em;text-transform:uppercase}
 @keyframes pulse{0%,100%{opacity:.35}50%{opacity:.95}}
+
+/* GLOBAL SECTIONS - Ces styles s'appliquent à toutes les sections du site. */
 .section{padding:80px 0;position:relative;z-index:1}
 .section--alt{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.01));border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
+
+/* GLOBAL TITLES - tous les titres et textes d'intro */
 .h2{font-family:var(--serif);letter-spacing:.02em;margin:0 0 12px;font-size:34px}
 .lead{margin:0 0 22px;color:var(--muted);font-size:16px;line-height:1.65;max-width:860px}
+
+/* GLOBAL GRID - la grille 3 colonnes */
 .grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+
+/* CARDS - act I nice belong et chaos.. */
 .card{background:linear-gradient(
 180deg,
 rgba(122,11,27,.08),
 rgba(12,12,17,.45)
 ),rgba(12,12,17,.55));border:1px solid rgba(122,11,27,.30);border-radius:22px;padding:8px 12px;box-shadow:var(--shadow)}
 .card__title{font-weight:850;color:rgba(240,213,138,.95);margin-bottom:6px;letter-spacing: .05em}.card__text{color:rgba(244,240,234,.72);line-height:1.55}
+
+/* FORM - C'est tout le formulaire Join The Circle. */
 .form{border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(12,12,17,.70),rgba(12,12,17,.48));border-radius:26px;padding:18px;box-shadow:var(--shadow)}
 .form--compact{padding:24px}.form__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .field{display:flex;flex-direction:column;gap:6px}.field span{font-size:12px;color:rgba(244,240,234,.70)}
@@ -127,6 +139,9 @@ rgba(12,12,17,.45)
 .check input{margin-top:3px}
 .form__actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
 .form__status{margin-top:10px;color:rgba(240,213,138,.92);font-weight:700}
+
+
+/* FOOTER */
 .footer{padding:26px 18px;border-top:1px solid rgba(255,255,255,.06);color:rgba(244,240,234,.65);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .footer__links a{
   text-decoration:none;
@@ -146,6 +161,7 @@ rgba(12,12,17,.45)
   opacity:.4;
 }
 
+/* MODAL */
 .modal{position:fixed;inset:0;display:none;z-index:20}.modal[aria-hidden='false']{display:block}
 .modal__overlay{position:absolute;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(6px)}
 .modal__panel{position:relative;margin:10svh auto 0;width:min(800px,calc(100% - 24px));min-height:410px;border-radius:26px;border:1px solid rgba(255,255,255,.10);background:linear-gradient(180deg,rgba(12,12,17,.92),rgba(12,12,17,.72));box-shadow:var(--shadow);padding:16px}
@@ -155,12 +171,18 @@ rgba(12,12,17,.45)
 .modal__sub{margin:6px 0 0;color:rgba(244,240,234,.68);font-size:13px;line-height:1.5}
 .modal__x{background:transparent;border:0;color:rgba(244,240,234,.8);font-size:18px;cursor:pointer;padding:8px 10px;border-radius:12px}
 .modal__x:hover{background:rgba(255,255,255,.05)}
+
+/* REVEAL ANIMATION - C'est l'animation qui fait apparaître les sections au scroll. */
 [data-reveal]{opacity:0;transform:translateY(14px);transition:.55s ease}[data-reveal].is-visible{opacity:1;transform:translateY(0)}
+
+/* DESKTOP */
 @media (min-width:920px){.nav{display:flex}.title__top{font-size:56px}.title__mid{font-size:124px}.title__bot{font-size:44px}}
+
+/* TABLET */
 @media (max-width:860px){.grid3{grid-template-columns:1fr}.meta{grid-template-columns:1fr;max-width:520px}}
 
 
-
+/* BUTTON SHINE - Le reflet qui traverse les boutons.*/
 .btn::before{
   content:"";
   position:absolute;
@@ -221,6 +243,7 @@ rgba(12,12,17,.45)
 
 /* ===== SPOTLIGHT ANIMATION (AMBIANCE CLUB) ===== */
 
+/* HERO - SPOTLIGHTS */
 .spotlight{
   position:absolute;
   width:900px;
@@ -268,7 +291,7 @@ rgba(12,12,17,.45)
   }
 }
 
-
+/******** BUTTON HOVER GLOW ********/
 .btn::after{
   content:"";
   position:absolute;
@@ -291,6 +314,8 @@ rgba(12,12,17,.45)
 
 
 /* option : petit “flicker” très léger (classe, pas permanent) */
+
+/******** RED FLICKER ********/
 .mark-red.flicker{
   animation: redFlicker 5.5s infinite;
 }
@@ -304,6 +329,7 @@ rgba(12,12,17,.45)
   97% { opacity: 1; }
 }
 
+/******** BRAND ********/
 .brand__name{
   background: linear-gradient(180deg, #F0D58A, #C8A24A);
   -webkit-background-clip: text;
@@ -311,6 +337,7 @@ rgba(12,12,17,.45)
   color: transparent;
 }
 
+/******** HERO LINES ********/
 .hero-lines::before,
 .hero-lines::after{
   content:"";
@@ -351,6 +378,7 @@ rgba(12,12,17,.45)
   color: rgba(240,213,138,0.5);
 }
 
+/******** HERO BACKGROUND MARK - gros cns fantome ********/
 .hero-bg-mark{
   position: absolute;
   top: 50%;
@@ -371,7 +399,7 @@ rgba(12,12,17,.45)
   filter: blur(2px);
 }
 
-}
+/******** GLOBAL IMAGES ********/
 img {
   max-width: 100%;
   height: auto;
@@ -379,19 +407,20 @@ img {
 
 
 /* Boutons safe */
+/******** BUTTON SAFETY ********/
 button {
   max-width: 100%;
 }
 
-@media (max-width: 768px) {
-  .hero {
-    padding: 90px 16px 40px;
-  }
 
+
+  /* MOBILE - HERO + GLOBAL SECTIONS */
   .section {
     padding: 40px 16px;
   }
 }
+
+/* MOBILE TOPBAR */
 @media (max-width: 520px){
   .topbar{
     flex-wrap: wrap;
@@ -411,6 +440,8 @@ button {
     font-size: 13px;
   }
 }
+
+/* MOBILE TOPBAR - SMALL SCREEN */
 @media (max-width: 480px){
   .topbar{
     flex-wrap: wrap;
@@ -434,14 +465,8 @@ button {
     font-size: 10px;
   }
 }
-@media (max-width: 768px){
-  .hero-lines::before,
-  .hero-lines::after{
-    display:none;
-  }
-}
 
-
+/* HERO TYPOGRAPHY */
 .subtitle{
   font-weight: 150;
   letter-spacing: 0.03em;
@@ -466,6 +491,7 @@ button {
   text-transform: uppercase;
 }
 
+/* HERO LOGO */
 .hero-logo {
   width: 190px;
   height: auto;
@@ -474,7 +500,7 @@ button {
 }
 
 
-
+/* MOBILE - HERO */
 @media (max-width: 768px) {
 
   .hero-logo{
@@ -493,14 +519,22 @@ button {
     font-size: 28px;
   }
 
-}
-
-@media (max-width: 768px) {
   .pill{
     display:none;
   }
+
+    .hero-lines::before,
+  .hero-lines::after{
+    display:none;
+  }
+
+  .hero {
+    padding: 90px 16px 40px;
+  }
+
 }
 
+/* MODAL IMAGE */
 .modal-image{
   position:absolute;
   right:80px;
@@ -510,40 +544,106 @@ button {
   opacity:0.28;
 }
 
+/* THE CIRCLE */
 #cercle-noir{
   scroll-margin-top: 20px;
   margin-bottom:270px;
 }
 
+/* MODAL CONTENT */
 .modal-content{
   margin-top:-10px;
   padding:0 20px;
   max-width:520px;
 }
 
+/* MODAL TITLE */
 .expect-title{
   margin-top: 25px;
     color:#DCC37A;
 }
 
-.experience-card{
-  min-height: 400px;
+
+/* MOBILE - HERO TAG - keep it between us */
+@media (max-width: 768px) {
+  .pill{
+    display:none;
+  }
 }
 
-.experience-mark{
-  text-align:center;
-  margin-top:-180px;
+/* MODAL - DECORATIVE IMAGE */
+.modal-image{
+  position:absolute;
+  right:80px;
+  top:40%;
+  transform:translateY(-50%);
+  width:260px;
+  opacity:0.28;
 }
 
-.experience-mark img{
-  width:500px;
-  opacity:0;
+/* THE CIRCLE */
+#cercle-noir{
+  scroll-margin-top: 20px;
+  margin-bottom:270px;
 }
+
+/* MODAL - CONTENT */
+.modal-content{
+  margin-top:-10px;
+  padding:0 20px;
+  max-width:520px;
+}
+
+/* MODAL - INSIDE THE CIRCLE TITLE */
+.expect-title{
+  margin-top: 25px;
+    color:#DCC37A;
+}
+
+
+/* MOBILE - PILL */
+@media (max-width: 768px) {
+  .pill{
+    display:none;
+  }
+}
+
+/* MODAL IMAGE */
+.modal-image{
+  position:absolute;
+  right:80px;
+  top:40%;
+  transform:translateY(-50%);
+  width:260px;
+  opacity:0.28;
+}
+
+/* THE CIRCLE */
+#cercle-noir{
+  scroll-margin-top: 20px;
+  margin-bottom:270px;
+}
+
+/* MODAL CONTENT */
+.modal-content{
+  margin-top:-10px;
+  padding:0 20px;
+  max-width:520px;
+}
+
+/* MODAL TITLE */
+.expect-title{
+  margin-top: 25px;
+    color:#DCC37A;
+}
+
 
 #behind-the-curtain{
   scroll-margin-top: 160px;
 }
 
+
+/* MOBILE TOPBAR */
 @media (max-width: 480px){
   .topbar{
     flex-wrap: wrap;
@@ -555,19 +655,16 @@ button {
     justify-content:center;
   }
 }
-@media (max-width: 768px){
 
-  .experience-mark img{
-    width:420px;
-  }
 
-}
-
+/* GLOBAL - PREVENT HORIZONTAL SCROLL */
 html,
 body{
   overflow-x:hidden;
 }
 
+
+/* GALLERY */
 .gallery3{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -596,6 +693,7 @@ body{
     contrast(1.1);
 }
 
+/* MOBILE - GALLERY */
 @media (max-width:768px){
 
   .gallery3{
@@ -617,6 +715,8 @@ body{
     margin-top: 80px;
 }
 
+
+/* REACH */
 .reach-links a{
   display:block;
   font-size:12px;
@@ -639,6 +739,8 @@ body{
     text-align: center;
 }
 
+
+/* INTRO CARDS */
 .intro-cards{
   display:flex;
   gap:16px;
@@ -651,6 +753,7 @@ body{
 }
 
 
+/* MOBILE - CARDS + FORM */
 @media (max-width:768px){
 
   .intro-cards{
@@ -670,7 +773,11 @@ body{
   #within{
   scroll-margin-top:500px;
 }
+/* END MOBILE - CARDS + FORM */
 
+/* =====================================
+   WITHIN - HALO
+===================================== */
 
 .within-sparkles{
   position:absolute;
@@ -678,10 +785,6 @@ body{
   pointer-events:none;
 }
 
-#within{
-  position:relative;
-  overflow:hidden;
-}
 }
 
 #within{
@@ -737,3 +840,7 @@ body{
       scale(1.2);
   }
 }
+
+/* =====================================
+   END WITHIN - HALO
+===================================== */
