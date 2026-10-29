@@ -211,7 +211,22 @@ rgba(12,12,17,.45)
 [data-reveal]{opacity:0;transform:translateY(14px);transition:.55s ease}[data-reveal].is-visible{opacity:1;transform:translateY(0)}
 
 /* DESKTOP */
-@media (min-width:920px){.nav{display:flex}.title__top{font-size:56px}.title__mid{font-size:124px}.title__bot{font-size:44px}}
+@media (min-width:920px){
+  .nav{
+    display:flex;
+  }
+
+  .title__top{
+    font-size:56px;
+  }
+
+  .title__mid{
+    font-size:124px;
+
+  .title__bot{
+    font-size:30px;
+  }
+}
 
 /* TABLET */
 @media (max-width:860px){.grid3{grid-template-columns:1fr}.meta{grid-template-columns:1fr;max-width:520px}}
@@ -605,6 +620,43 @@ button {
   scroll-margin-top: 160px;
 }
 
+/* BEHIND THE CURTAIN - LIGHT */
+
+#behind-the-curtain{
+  position:relative;
+  overflow:hidden;
+}
+
+/* BEHIND THE CURTAIN - LIGHT */
+
+#behind-the-curtain{
+  position:relative;
+  overflow:hidden;
+}
+
+/* BEHIND THE CURTAIN - FILM GRAIN */
+
+#behind-the-curtain::before{
+  content:"";
+
+  position:absolute;
+  inset:0;
+
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+
+  opacity:.15;
+
+  mix-blend-mode:soft-light;
+
+  pointer-events:none;
+
+  z-index:0;
+}
+
+#behind-the-curtain .container{
+  position:relative;
+  z-index:1;
+}
 
 /* MOBILE TOPBAR */
 @media (max-width: 480px){
@@ -787,12 +839,12 @@ body{
 
   background:radial-gradient(
     ellipse,
-    rgba(229, 193, 93, 0.2) 0%,
+    rgba(229, 193, 93, 0.15) 0%,
     rgba(240,213,138,.04) 35%,
     transparent 75%
   );
 
-  filter:blur(120px);
+  filter:blur(160px);
 
   pointer-events:none;
   z-index:1;
@@ -880,13 +932,13 @@ animation: withinGlow 25s ease-in-out infinite;
 
   transform:translate(-50%,-50%);
 
-  font-size:400px;
+  font-size:450px;
 
-color:rgba(235, 212, 147, 0.02);
+color:rgba(235, 212, 147, 0.009);
 
   z-index:0;
 
   pointer-events:none;
-  filter:blur(7px);
+  filter:blur(12px);
   font-size:500px;
 }
