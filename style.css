@@ -226,6 +226,8 @@ rgba(12,12,17,.45)
 
   .title__bot{
     font-size:18px;
+      margin-top:8px;
+
   }
 }
 
@@ -567,7 +569,9 @@ button {
   }
 
   .title__bot{
-    font-size: 20px;
+    font-size: 12px;
+  margin-top:8px;
+}
   }
 
   .pill{
