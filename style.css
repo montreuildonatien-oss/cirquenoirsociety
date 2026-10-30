@@ -982,4 +982,14 @@ color:rgba(235, 212, 147, 0.009);
       transparent 70%
     );
   }
+
+    .within-word{
+    font-size:120px;
+
+    top:75%;
+
+    color:rgba(235,212,147,.015);
+
+    filter:blur(3px);
+  }
   }
