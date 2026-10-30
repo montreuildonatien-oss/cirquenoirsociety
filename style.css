@@ -222,6 +222,7 @@ rgba(12,12,17,.45)
 
   .title__mid{
     font-size:124px;
+  }
 
   .title__bot{
     font-size:30px;
@@ -813,7 +814,6 @@ body{
   pointer-events:none;
 }
 
-}
 
 #within{
   position:relative;
@@ -949,4 +949,37 @@ color:rgba(235, 212, 147, 0.009);
     display:grid !important;
     grid-template-columns:1fr !important;
   }
-}
+
+    #behind-the-curtain::before{
+    opacity:.80;
+    mix-blend-mode:overlay;
+  }
+
+  #within::after{
+    width:2200px;
+    height:2200px;
+
+    filter:blur(40px);
+
+    background:radial-gradient(
+      ellipse,
+      rgba(229,193,93,.45) 0%,
+      rgba(240,213,138,.20) 35%,
+      transparent 75%
+    );
+  }
+
+  #within::before{
+    width:1800px;
+    height:1800px;
+
+    filter:blur(20px);
+
+    background:radial-gradient(
+      ellipse,
+      rgba(114,11,27,.60) 0%,
+      rgba(150,35,50,.40) 35%,
+      transparent 70%
+    );
+  }
+  }
