@@ -690,11 +690,15 @@ button {
 
   color:rgba(240,213,138,.95);
 
-  letter-spacing:.08em;
+  letter-spacing:.10em;
 
   text-transform:uppercase;
 
   z-index:1;
+
+    font-size:19px;
+
+  font-weight:800;
 }
 
 .btc-highlight::before{
@@ -705,8 +709,8 @@ button {
   left:50%;
   top:50%;
 
-  width:200%;
-  height:280%;
+  width:130%;
+  height:180%;
 
   transform:translate(-50%,-50%);
 
