@@ -996,4 +996,9 @@ color:rgba(235, 212, 147, 0.009);
 
     filter:blur(2px);
   }
+
+    .modal__panel{
+    max-height:90vh;
+    overflow-y:auto;
+  }
   }
