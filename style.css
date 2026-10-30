@@ -942,3 +942,11 @@ color:rgba(235, 212, 147, 0.009);
   filter:blur(12px);
   font-size:500px;
 }
+
+@media (max-width:768px){
+
+  .grid3{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+  }
+}
