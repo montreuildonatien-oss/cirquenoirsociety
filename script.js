@@ -127,3 +127,29 @@ document.querySelectorAll('.btn').forEach(btn => {
     btn.style.setProperty('--y', y + 'px');
   });
 });
+
+
+// LANGUE - FR / EN
+
+document.getElementById("lang-en").classList.add("active");
+
+document.getElementById("lang-fr").addEventListener("click", (e) => {
+  e.preventDefault();
+
+  document.querySelectorAll("[data-fr]").forEach(el => {
+el.innerHTML = el.dataset.fr;  });
+
+  document.getElementById("lang-fr").classList.add("active");
+  document.getElementById("lang-en").classList.remove("active");
+});
+
+document.getElementById("lang-en").addEventListener("click", (e) => {
+  e.preventDefault();
+
+  document.querySelectorAll("[data-en]").forEach(el => {
+el.innerHTML = el.dataset.en;  });
+
+  document.getElementById("lang-en").classList.add("active");
+  document.getElementById("lang-fr").classList.remove("active");
+});
+

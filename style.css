@@ -71,46 +71,9 @@ overflow: hidden;
 /* HERO SUBTITLE - meme si presque vide aujourd'hui */
 .subtitle{margin:14px auto 26px;max-width:760px;color:var(--muted);font-size:16px;line-height:1.65}
 
-/* HERO BUTTONS */
-.hero__buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top: 40px;  margin-bottom: 20px;display:none}
-
-/******** HERO CARDS ********/
-.meta{margin:28px auto 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:740px;display:none}
-
-.meta__card{
-  background:linear-gradient(
-    180deg,
-    rgba(122,11,27,.15),
-    rgba(12,12,17,.55)
-  );
-
-  border:1px solid rgba(200,162,74,.15);
-  border-radius:22px;
-  transition:.25s ease;
-    backdrop-filter: blur(8px);
-}
-
-.meta__card:hover{
-  transform:translateY(-3px);
-  border-color:rgba(240,213,138,.35);
-
-  box-shadow:
-    0 0 25px rgba(122,11,27,.20),
-    0 0 10px rgba(240,213,138,.08);
-}
 
 
-.meta__card .k{
-  font-size:12px;
-  color:rgba(240,213,138,.70);
-  letter-spacing:.08em;
-  text-transform:uppercase;
-}
 
-.meta__card .v{
-  font-weight:800;
-  letter-spacing:.03em;
-}
 
 /* HERO - SCROLL INDICATOR */
 .scrollHint{margin-top:34px;display:flex;flex-direction:column;align-items:center;gap:10px;opacity:.6}
@@ -134,7 +97,7 @@ overflow: hidden;
 rgba(122,11,27,.08),
 rgba(12,12,17,.45)
 ),rgba(12,12,17,.55));border:1px solid rgba(122,11,27,.30);border-radius:22px;padding:8px 12px;box-shadow:var(--shadow)}
-.card__title{font-weight:850;color:rgba(240,213,138,.95);margin-bottom:6px;letter-spacing: .05em}.card__text{color:rgba(244,240,234,.72);line-height:1.55}
+.card__title{font-weight:850;color:rgba(240,213,138,.95);margin-bottom:6px;letter-spacing: .05em}
 
 /* FORM - C'est tout le formulaire Join The Circle. */
 .form{border:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(12,12,17,.70),rgba(12,12,17,.48));border-radius:26px;padding:18px;box-shadow:var(--shadow)}
@@ -339,21 +302,7 @@ rgba(12,12,17,.45)
 }
 
 
-/* option : petit “flicker” très léger (classe, pas permanent) */
 
-/******** RED FLICKER ********/
-.mark-red.flicker{
-  animation: redFlicker 5.5s infinite;
-}
-
-@keyframes redFlicker{
-  0%, 100% { opacity: 1; }
-  92% { opacity: 1; }
-  93% { opacity: .65; }
-  94% { opacity: 1; }
-  96% { opacity: .8; }
-  97% { opacity: 1; }
-}
 
 /******** BRAND ********/
 .brand__name{
@@ -363,46 +312,7 @@ rgba(12,12,17,.45)
   color: transparent;
 }
 
-/******** HERO LINES ********/
-.hero-lines::before,
-.hero-lines::after{
-  content:"";
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
 
-  width:1px;
-  height:220px;
-
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    rgba(240,213,138,0.5),
-    transparent
-  );
-
-  opacity:0.6;
-}
-
-.hero-lines::before{
-  left:0;
-}
-
-.hero-lines::after{
-  right:0;
-}
-
-
-.hero-lines__text{
-  position:absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%, 120px);
-  font-size:10px;
-  letter-spacing:0.3em;
-  text-transform:uppercase;
-  color: rgba(240,213,138,0.5);
-}
 
 /******** HERO BACKGROUND MARK - gros cns fantome ********/
 .hero-bg-mark{
@@ -501,13 +411,6 @@ button {
   font-size: 13px;
 }
 
-.subtitle.secondary{
-  margin-top: 1px;
-  font-size: 13px;
-  letter-spacing: 0.12em;
-  opacity: 0.45;
-  font-weight: 500;
-}
 
 .subtitle.tertiary{
   margin-top:2px;
@@ -576,13 +479,6 @@ button {
 }
 
 
-/* MODAL TITLE - INSIDE THE CIRCLE TITLE */
-.expect-title{
-  margin-top: 25px;
-    color:#DCC37A;
-    display:none;
-}
-
 /* NOT EVERYONE FINDS THIS DOOR */
 .door-line{
   color:#e1be6c;
@@ -609,12 +505,6 @@ button {
   scroll-margin-top: 160px;
 }
 
-/* BEHIND THE CURTAIN - LIGHT */
-
-#behind-the-curtain{
-  position:relative;
-  overflow:hidden;
-}
 
 /* BEHIND THE CURTAIN - LIGHT */
 
@@ -837,13 +727,6 @@ body{
    WITHIN - HALO
 ===================================== */
 
-.within-sparkles{
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-}
-
-
 #within{
   position:relative;
   overflow:hidden;
@@ -881,22 +764,6 @@ body{
   animation: withinGlow 25s ease-in-out infinite;
 }
 
-@keyframes withinGlow{
-
-  0%,100%{
-    opacity:.2;
-    transform:
-      translate(-50%,-50%)
-      scale(1);
-  }
-
-  50%{
-    opacity:1;
-    transform:
-      translate(-40%,-50%)
-      scale(1.08);
-  }
-}
 
 /* =====================================
    END WITHIN - HALO
@@ -1029,3 +896,29 @@ color:rgba(235, 212, 147, 0.009);
   }
 
 
+.lang-switch{
+  display:flex;
+  align-items:center;
+  gap:6px;
+
+  font-size:11px;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+
+.lang-switch a{
+  color:rgba(244,240,234,.45);
+  text-decoration:none;
+  transition:.25s ease;
+}
+
+.lang-switch a:hover{
+  color:rgba(240,213,138,.85);
+}
+
+.lang-switch span{
+  color:rgba(244,240,234,.20);
+}
+.lang-switch a.active{
+  color:rgba(240,213,138,.95);
+}
