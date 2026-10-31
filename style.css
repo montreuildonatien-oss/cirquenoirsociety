@@ -52,35 +52,15 @@ overflow: hidden;
 .title__mid{
   display:block;
   font-size:92px;
-
   background: linear-gradient(180deg, #F0D58A, #C8A24A);
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
-  filter: drop-shadow(0 0 10px rgba(240,213,138,0.15));
-
-  
-text-shadow:
-  0 0 4px rgba(240,213,138,0.25),
-  0 0 8px rgba(240,213,138,0.15);
-
-
-  animation: glowPulse 2.5s ease-in-out infinite;
+  filter: none;
+  text-shadow: none;
+  animation: none;
 }
 
-@keyframes glowPulse{
-  0%,100%{
-    text-shadow:
-      0 0 4px rgba(240,213,138,0.18),
-      0 0 8px rgba(240,213,138,0.10);
-  }
-
-  50%{
-    text-shadow:
-      0 0 8px rgba(240,213,138,0.22),
-      0 0 16px rgba(240,213,138,0.12);
-  }
-}
 .title__bot{display:block;font-size:36px;color:rgba(244,240,234,.82)}
 
 /* HERO SUBTITLE - meme si presque vide aujourd'hui */
