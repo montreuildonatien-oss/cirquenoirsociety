@@ -618,11 +618,11 @@ button {
 /* MODAL IMAGE */
 .modal-image{
   position:absolute;
-  right:80px;
+  right:7px;
   top:40%;
   transform:translateY(-50%);
-  width:260px;
-  opacity:0.28;
+  width:280px;
+  opacity:0.30;
 }
 
 
