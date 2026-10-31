@@ -35,25 +35,14 @@ overflow: hidden;
 }
 .btn:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.22)}.btn--lg{padding:12px 16px;border-radius:16px;font-size:14px}.btn--ghost{background:rgba(255,255,255,.02);color:rgba(200,169,107,.70);}
 .btn--gold{background:linear-gradient(135deg,#c6a464,#b89147);color:#16110A;border-color:rgba(200,162,74,.75);box-shadow: 0 10px 40px rgba(240,213,138,0.25);}
-.btn--red{
-  background: linear-gradient(
-    135deg,
-    #3b0610,
-    #65101d
-  );
-  border-color: rgba(177,14,45,.45);
-
-  box-shadow:
-    0 10px 30px rgba(122,11,27,.35),
-    0 0 20px rgba(122,11,27,.15);
-}
+.btn--red{background:linear-gradient(135deg,#c6a464,#b89147);color:#16110A;border-color:rgba(200,162,74,.75);box-shadow: 0 10px 40px rgba(240,213,138,0.25);}
 
 /* HERO LAYOUT */
 .hero{min-height:100vh;padding:80px 0 40px;position:relative;z-index:1;display:grid;place-items:center}
 .hero__bg{position:absolute;inset:0;overflow:hidden;z-index:0}
 .bgVideo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.2;filter:brightness(.5)}
 .bgOverlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.35),rgba(0,0,0,.75))}
-.hero__inner{width:100%;text-align:center;padding:0 18px;max-width:980px;position:relative;z-index:2;transform: translateY(-10px);}
+.hero__inner{width:100%;text-align:center;padding:0 18px;max-width:980px;position:relative;z-index:2;transform: translateY(80px);}
 
 /* HERO PILL - KEEP IT BETWEEN US */
 .pill{display:inline-flex;padding:4px 8px;border:1px solid rgba(200,162,74,.35);border-radius:999px;color:rgba(240,213,138,.95);letter-spacing:.12em;font-size:8px;margin:0 0 2px;text-transform:uppercase;background:rgba(0,0,0,.18)}
@@ -98,10 +87,10 @@ text-shadow:
 .subtitle{margin:14px auto 26px;max-width:760px;color:var(--muted);font-size:16px;line-height:1.65}
 
 /* HERO BUTTONS */
-.hero__buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top: 40px;  margin-bottom: 20px}
+.hero__buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top: 40px;  margin-bottom: 20px;display:none}
 
 /******** HERO CARDS ********/
-.meta{margin:28px auto 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:740px}
+.meta{margin:28px auto 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:740px;display:none}
 
 .meta__card{
   background:linear-gradient(
@@ -537,16 +526,14 @@ button {
 
 .subtitle.tertiary{
   margin-top:2px;
-  font-size:12px;
-
-  letter-spacing:0.18em;
-
-  opacity:0.60;
-
-  color:rgba(240,213,138,.75);
-
+  font-size:20px;          /* un peu plus grand */
+  letter-spacing:0.12em;   /* plus resserré */
+  opacity:1;
+  color:#F5F1E8;           /* blanc cassé */
   text-transform:uppercase;
+  margin-bottom:220px;
 }
+
 
 
 /* HERO LOGO */
@@ -824,31 +811,10 @@ body{
 }
 
 
-/* INTRO CARDS */
-.intro-cards{
-  display:flex;
-  gap:16px;
-  flex-wrap:wrap;
-}
-
-.intro-cards .card{
-  flex:none;
-  min-width:120px;
-}
 
 
 /* MOBILE - CARDS + FORM */
 @media (max-width:768px){
-
-  .intro-cards{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:10px;
-  }
-
-  .intro-cards .card{
-    min-width:auto;
-  }
 
   .form__grid{
     grid-template-columns:1fr;
