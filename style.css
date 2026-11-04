@@ -911,6 +911,14 @@ color:rgba(235, 212, 147, 0.009);
 
 @media (max-width:768px){
 
+  .subtitle.tertiary{
+    margin-top:40px;
+  }
+
+
+    .hero__inner{
+    transform:translateY(0);
+  }
     .brand__text{
     display:none;
   }
