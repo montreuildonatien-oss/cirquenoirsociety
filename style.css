@@ -34,7 +34,14 @@ position: relative;
 overflow: hidden;
 }
 .btn:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.22)}.btn--lg{padding:12px 16px;border-radius:16px;font-size:14px}.btn--ghost{background:rgba(255,255,255,.02);color:rgba(200,169,107,.70);}
-.btn--gold{background:linear-gradient(135deg,#c6a464,#b89147);color:#16110A;border-color:rgba(200,162,74,.75);box-shadow: 0 10px 40px rgba(240,213,138,0.25);}
+
+.btn--gold{
+  background:#C6A86B;
+  color:#16110A;
+  border-color:#C6A86B;
+  box-shadow:none;
+}
+
 .btn--red{background:linear-gradient(135deg,#c6a464,#b89147);color:#16110A;border-color:rgba(200,162,74,.75);box-shadow: 0 10px 40px rgba(240,213,138,0.25);}
 
 /* HERO LAYOUT */
@@ -359,7 +366,7 @@ button {
 /* MOBILE TOPBAR */
 @media (max-width: 520px){
   .topbar{
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 10px;
     padding: 10px 12px;
   }
@@ -436,9 +443,6 @@ button {
 /* MOBILE - HERO */
 @media (max-width: 768px) {
 
-    .lang-switch{
-    margin-left:50px;
-  }
 
   .hero-logo{
     width: 110px;
@@ -456,7 +460,31 @@ button {
     font-size: 12px;
   margin-top:8px;
 }
+
+  .topbar__cta{
+    position:relative;
+    width:100%;
+  transform:translateY(-2px);
+
   }
+
+  .lang-switch{
+    position:absolute;
+    right:0;
+    top:34px;
+  }
+
+
+  .btn--gold{
+    margin-left:auto;
+  }
+
+    .topbar__cta .btn--gold{
+    transform:translateY(-4px);
+  }
+
+}
+  
 
 
     .hero-lines::before,
@@ -654,6 +682,19 @@ body{
 
 /* MOBILE - GALLERY */
 @media (max-width:768px){
+
+  .topbar{
+    flex-wrap:nowrap;
+  }
+
+
+  .topbar{
+    padding:14px 12px;
+  }
+
+}
+
+}
 
   .gallery3{
     grid-template-columns:1fr;
@@ -870,6 +911,10 @@ color:rgba(235, 212, 147, 0.009);
 
 @media (max-width:768px){
 
+    .brand__text{
+    display:none;
+  }
+
   .grid3{
     display:grid !important;
     grid-template-columns:1fr !important;
@@ -930,7 +975,7 @@ color:rgba(235, 212, 147, 0.009);
   align-items:center;
   gap:6px;
 
-  font-size:11px;
+  font-size:10px;
   letter-spacing:.12em;
   text-transform:uppercase;
 }
@@ -950,4 +995,57 @@ color:rgba(235, 212, 147, 0.009);
 }
 .lang-switch a.active{
   color:rgba(240,213,138,.95);
+}
+
+/* =====================================
+    TOPBAR - INSTA
+===================================== */
+.social-link{
+  border:none;
+  background:none;
+    transform:translateY(10px);
+    
+
+
+  font-family:var(--serif);
+
+  font-size:13px;
+  letter-spacing:.12em;
+
+  color:#E8E0D0;
+
+  opacity:.25;
+
+  margin-right:32px;
+
+  text-decoration:none;
+}
+
+.social-link svg{
+  width:14px;
+  height:14px;
+}
+
+/* =====================================
+    test - ig
+===================================== */
+@media (max-width:768px){
+
+  .social-link{
+    position:absolute;
+    right:50px;
+    top:50%;
+    transform:translateY(-50%);
+  }
+
+}
+
+
+/* =====================================
+    TOPBAR - LOGO
+===================================== */
+.topbar-logo{
+  width:38px;
+  height:auto;
+  display:block;
 }
