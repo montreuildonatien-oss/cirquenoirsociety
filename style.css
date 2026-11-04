@@ -654,17 +654,25 @@ body{
 /* GALLERY */
 .gallery3{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:1fr;
   gap:12px;
-  margin-top:30px;
+  margin-top:50px;
+  margin-bottom:60px;
+
 }
 
-.gallery3 img{
-  width:100%;
-  height:240px;
-  object-fit:cover;
 
-  border-radius:20px;
+
+.gallery3 img{
+min-height:400px;
+  object-fit:cover;
+    width:840px;
+      object-position:center 15%;
+
+
+
+
+  border-radius:0px;
 
   filter:
     brightness(.75)
