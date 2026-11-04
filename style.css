@@ -704,12 +704,9 @@ body{
     height:240px;
   }
 
-.gallery-clown{
-  object-fit: contain !important;
-  background:#000;
-}
+  
 
-}
+
 
 .circle-intro{
     margin-top: 5px;
