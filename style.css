@@ -723,6 +723,31 @@ body{
 
 }
 
+#within .h2{
+  display:none;
+}
+
+
+/* WITHIN MANIFEST */
+.within-manifest{
+  margin-top:40px;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+  gap:14px;
+
+  color:#DCC37A;
+
+  text-align:center;
+
+  letter-spacing:.12em;
+  text-transform:uppercase;
+
+  font-size:13px;
+}
+
 /* =====================================
    WITHIN - HALO
 ===================================== */
@@ -761,7 +786,7 @@ body{
   pointer-events:none;
   z-index:1;
 
-  animation: withinGlow 25s ease-in-out infinite;
+  animation: withinGlow 15s ease-in-out infinite;
 }
 
 
@@ -796,7 +821,7 @@ body{
 
   pointer-events:none;
 
-animation: withinGlow 25s ease-in-out infinite;
+animation: withinGlow 15s ease-in-out infinite;
 
 }
 
