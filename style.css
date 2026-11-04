@@ -436,6 +436,10 @@ button {
 /* MOBILE - HERO */
 @media (max-width: 768px) {
 
+    .lang-switch{
+    margin-left:50px;
+  }
+
   .hero-logo{
     width: 110px;
   }
