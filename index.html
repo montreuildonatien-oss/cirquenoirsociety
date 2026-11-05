@@ -91,7 +91,11 @@
     <div class="topbar__cta">
 <a class="social-link" href="https://instagram.com/cirquenoirsociety" target="_blank" rel="noreferrer">
   IG
-</a>      
+</a> 
+
+<a href="#" class="open-call-btn" id="openCallBtnHeader">
+  BE OUR EYES
+</a>
       
 <a
   class="btn btn--gold"
@@ -338,7 +342,7 @@
 
         <form class="form" id="TheCercleNoirForm">
           <div class="form__grid">
-            <label class="field"><span>Full name</span><input required name="name" type="text" placeholder="Ex: LOUIX VIX" /></label>
+            <label class="field"><span>Full name</span><input required name="name" type="text" placeholder="Ex: LOUIX XIV" /></label>
             <label class="field"><span>Email</span><input required name="email" type="email" placeholder="ex: you@mail.com" /></label>
             <label class="field"><span>Instagram @</span><input required name="instagram" type="text" placeholder="@toncompte" /></label>
             
@@ -355,6 +359,10 @@
 </div>
           <div class="form__actions">
             <button class="btn btn--gold btn--lg" type="submit">Enter</button>
+
+<a href="#" class="open-call-btn" id="openCallBtn">
+  OPEN CALL · BE OUR EYES
+</a>
           </div>
 
    <div
@@ -481,7 +489,95 @@
 
   </div>
 </div>
+
+
+  <!-- OPEN CALL MODAL -->
+
+
+  <div class="modal" id="openCallModal" aria-hidden="true">
+  <div class="modal__overlay" id="closeOpenCallModal" tabindex="-1"></div>
+
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="tableTitle">
+
+    <div class="modal__head">
+      <div>
+<div
+  class="modal__kicker"
+  data-en="Open Call — The Lens"
+  data-fr="Open Call — L'objectif">
+  Open Call — The Lens
+</div>
+
+<h3
+  class="modal__title"
+  data-en="EYES NEEDED"
+  data-fr="YEUX REQUIS">
+  EYES NEEDED
+</h3>
+
+        <p class="modal__sub">
+      
+<p
+  class="door-line"
+  data-en="We need a gaze that sees in the dark."
+  data-fr="Nous avons besoin d'un regard qui voit dans le noir.">
+We need a gaze that sees in the dark.
+</p>
+
+
+          <img src="assets/cns.png"
+     alt="Cirque Noir"
+     class="modal-image modal-image--opencall">
+        </p>
+      </div>
+
+      <button class="modal__x" id="xOpenCallModal" aria-label="Close">✕</button>
+    </div>
+
+<div class="modal-content">
+
+<p
+  data-en="Act I — Spring 2027.<br><br>Intimate. Nice.<br><br>More chapters to come."
+  data-fr="Acte I — Printemps 2027.<br><br>Intimiste. Nice.<br><br>D'autres chapitres suivront.">
+  Act I — Spring 2027.<br><br>
+  Intimate. Nice.<br><br>
+  60. Masked. No phones.
+<br><br>
+  
+To enter:<br><br>
+1. Join The Circle<br>
+2. Follow @cirquenoirsociety <br>  
+<span style="margin-left: 18px;"></span>+ send your best shot about the theme <br><br> 
+
+<span style="margin-left: 18px;"></span>BLACK IS THE RULE,<br> 
+<span style="margin-left: 18px;"></span>RED IS THE EXCEPTION. <br><br> <br><br>
+4 to shoot Act I.<br>
+Winner gets all chapters.<br> 
+Could become our eyes.
+</p>
+
+<div style="height:-1px;"></div>
+
+
+
+        <div style="height:20px;"></div>
+
+<div class="form__actions">
+
+   <button class="btn btn--gold" id="modalOpenCall" type="button">
+  Join The Circle
+</button>
+  
+</div>
+ 
+</div>
+
+  </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="script.js"></script>
+
+
 </body>
 </html>

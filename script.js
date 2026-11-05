@@ -153,3 +153,43 @@ el.innerHTML = el.dataset.en;  });
   document.getElementById("lang-fr").classList.remove("active");
 });
 
+
+
+const openCallModal = document.getElementById('openCallModal');
+const openCallBtn = document.getElementById('openCallBtn');
+const openCallBtnHeader = document.getElementById('openCallBtnHeader');
+const closeOpenCallModal = document.getElementById('closeOpenCallModal');
+const xOpenCallModal = document.getElementById('xOpenCallModal');
+
+function openOpenCallModal(){
+  openCallModal.setAttribute('aria-hidden','false');
+  document.body.style.overflow='hidden';
+}
+
+function closeOpenCall(){
+  openCallModal.setAttribute('aria-hidden','true');
+  document.body.style.overflow='';
+}
+
+openCallBtn?.addEventListener('click', (e) => {
+  e.preventDefault();
+  openOpenCallModal();
+  
+});
+
+openCallBtnHeader?.addEventListener('click', (e) => {
+  e.preventDefault();
+  openOpenCallModal();
+});
+
+closeOpenCallModal?.addEventListener('click', closeOpenCall);
+xOpenCallModal?.addEventListener('click', closeOpenCall);
+
+const modalOpenCall = document.getElementById('modalOpenCall');
+
+modalOpenCall?.addEventListener('click', () => {
+  closeOpenCall();
+
+  document.getElementById('cercle-noir')
+    ?.scrollIntoView({ behavior: 'smooth' });
+});
