@@ -177,6 +177,10 @@ rgba(12,12,17,.45)
   position:relative;
   top:13px;
 }
+
+.open-call-btn--form::after{
+  bottom:-6px;
+}
 }
 
 /* TABLET */
@@ -1117,4 +1121,8 @@ color:rgba(235, 212, 147, 0.009);
 
 .open-call-btn--header::after{
 bottom:14px;
+}
+
+.open-call-btn--form::after{
+  bottom:-6px;
 }
