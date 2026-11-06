@@ -1136,3 +1136,32 @@ color:rgba(235, 212, 147, 0.009);
   font-size:9px;
   opacity:.7;
 }
+
+
+/* LES 2 CONCOURS COMMENCENT ICI */
+
+.open-call-choice{
+  display:block;
+
+  width:260px;
+
+  padding:18px;
+
+  margin-bottom:14px;
+
+  background:transparent;
+
+  border:1px solid rgba(198,168,107,.25);
+
+  color:#E8E0D0;
+
+  text-align:left;
+
+  cursor:pointer;
+
+  transition:.25s ease;
+}
+
+.open-call-choice:hover{
+  border-color:#C6A86B;
+}
