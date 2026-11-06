@@ -1126,3 +1126,12 @@ bottom:14px;
 .open-call-btn--form::after{
   bottom:-6px;
 }
+
+.gold{
+  color:#C6A86B;
+  font-weight:600;
+}
+
+.gold-title{
+  color:#C6A86B;
+}
