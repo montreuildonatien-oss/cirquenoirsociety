@@ -141,7 +141,7 @@ rgba(12,12,17,.45)
 
 /* MODAL */
 .modal{position:fixed;inset:0;display:none;z-index:20}.modal[aria-hidden='false']{display:block}
-.modal__overlay{position:absolute;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(6px)}
+.modal__overlay{position:absolute;inset:0;background:rgba(0,0,0,.95);backdrop-filter:blur(6px)}
 .modal__panel{position:relative;margin:10svh auto 0;width:min(800px,calc(100% - 24px));min-height:410px;border-radius:26px;border:1px solid rgba(255,255,255,.10);background:linear-gradient(180deg,rgba(12,12,17,.92),rgba(12,12,17,.72));box-shadow:var(--shadow);padding:16px}
 .modal__head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}
 .modal__kicker{font-size:12px;color:rgba(240,213,138,.85);letter-spacing:.14em;text-transform:uppercase}
@@ -521,7 +521,7 @@ button {
 .modal-content{
   margin-top:-10px;
   padding:0 8px;
-  max-width:520px;
+  max-width:none;
 }
 
 
@@ -1143,7 +1143,7 @@ color:rgba(235, 212, 147, 0.009);
 .open-call-choice{
   display:block;
 
-  width:260px;
+  width:100%;
 
   padding:18px;
 
@@ -1164,4 +1164,95 @@ color:rgba(235, 212, 147, 0.009);
 
 .open-call-choice:hover{
   border-color:#C6A86B;
+}
+
+
+
+
+.open-call-choice span{
+  display:block;
+
+  font-size:11px;
+  letter-spacing:.35em;
+  text-transform:uppercase;
+
+  color:rgba(198,168,107,.7);
+
+  margin-bottom:16px;
+}
+
+.open-call-choice strong{
+  display:block;
+
+  font-size:20px;
+  font-weight:700;
+  letter-spacing:.15em;
+
+  color:#E8E0D0;
+
+  margin-bottom:10px;
+}
+
+.open-call-choice small{
+  display:block;
+
+  font-size:13px;
+
+  color:rgba(232,224,208,.6);
+
+  line-height:1.4;
+}
+
+
+.back-choice{
+  background:transparent;
+
+  border:1px solid rgba(198,168,107,.5);
+
+  color:#C6A86B;
+
+  font-size:11px;
+  letter-spacing:.20em;
+  text-transform:uppercase;
+
+  padding:8px 12px;
+
+  border-radius:999px;
+
+  cursor:pointer;
+
+  transition:.25s ease;
+}
+
+.back-choice:hover{
+  border-color:#C6A86B;
+  color:#E2C98F;
+}
+
+
+
+.open-call-choice strong{
+  display:block;
+
+  font-size:20px;
+  font-weight:700;
+  letter-spacing:.15em;
+
+  color:#E8E0D0;
+
+  min-height:48px;
+  margin-bottom:-8px;
+}
+
+
+
+.open-call-funnel{
+  display:block;
+
+  margin-top:8px;
+
+  color:#C6A86B;
+
+  font-size:12px;
+  letter-spacing:.20em;
 }

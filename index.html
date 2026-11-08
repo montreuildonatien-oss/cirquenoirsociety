@@ -517,17 +517,19 @@
 
 <div
   class="modal__kicker"
-  data-en="Open Call — BE OUR EYES"
-  data-fr="Open Call — BE OUR EYES">
-  Open Call — BE OUR EYES
+  data-en="Open Call"
+  data-fr="Open Call">
+  Open Call
 </div>
 
+<!--
 <h3
   class="modal__title"
-  data-en="OPEN CALL"
-  data-fr="OPEN CALL">
-  OPEN CALL
+  data-en="You have 2 ways to enter."
+  data-fr="You have 2 ways to enter.">
+  You have 2 ways to enter.
 </h3>
+-->
 
         <p class="modal__sub">
       
@@ -538,15 +540,13 @@
   You have 2 ways to enter.
 </p>
 
-          <button id="backToChoices">
-  ← Back
-</button>
 
 
-          <img src="assets/cns.png"
+    <!--
+<img src="assets/cns.png"
      alt="Cirque Noir"
      class="modal-image modal-image--opencall">
-        </p>
+-->
       </div>
 
       <button class="modal__x" id="xOpenCallModal" aria-label="Close">✕</button>
@@ -560,8 +560,10 @@
   <button id="btnShoot" class="open-call-choice">
   <span>I SHOOT</span><br>
   <strong>BE OUR EYES</strong><br>
-  <small>Looking for photographers</small>
-</button>
+<small>
+  Looking for photographers<br>
+  <span class="open-call-funnel">20 → 10 → 2</span>
+</small></button>
 
 
   <br>
@@ -569,8 +571,10 @@
 <button id="btnException" class="open-call-choice">
   <span>I AM</span><br>
   <strong>BE THE EXCEPTION</strong><br>
-  <small>Who will be the exception?</small>
-</button>
+<small>
+  Who will be the exception?<br>
+  <span class="open-call-funnel">20 → 10 → 1</span>
+</small></button>
 
 
 </div>
@@ -578,6 +582,9 @@
 
 <div id="shootContent" style="display:none;">
 
+<button id="backToChoices" class="back-choice">
+  ← OPEN CALL
+</button>
 
 <p
 
@@ -615,6 +622,10 @@ Winner could become the gaze of Cirque Noir.
 <div id="exceptionContent" style="display:none;">
 
   <h3>BE THE EXCEPTION</h3>
+
+<button id="backToChoices" class="back-choice">
+  ← OPEN CALL
+</button>
 
   <p>
     One in red, among 60 in black.
