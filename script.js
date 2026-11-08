@@ -193,3 +193,39 @@ modalOpenCall?.addEventListener('click', () => {
   document.getElementById('cercle-noir')
     ?.scrollIntoView({ behavior: 'smooth' });
 });
+
+
+// concours I shoot / I am
+
+const btnShoot = document.getElementById('btnShoot');
+const openCallHome = document.getElementById('openCallHome');
+const shootContent = document.getElementById('shootContent');
+
+btnShoot?.addEventListener('click', () => {
+  openCallHome.style.display = 'none';
+  shootContent.style.display = 'block';
+});
+
+shootContent.style.display = 'none';
+openCallHome.style.display = 'block';
+
+
+
+const btnException = document.getElementById('btnException');
+const exceptionContent = document.getElementById('exceptionContent');
+
+btnException?.addEventListener('click', () => {
+  openCallHome.style.display = 'none';
+  exceptionContent.style.display = 'block';
+}); 
+
+
+const backToChoices = document.getElementById('backToChoices');
+
+backToChoices?.addEventListener('click', () => {
+  openCallHome.style.display = 'block';
+
+  shootContent.style.display = 'none';
+
+  exceptionContent.style.display = 'none';
+});
