@@ -200,10 +200,12 @@ modalOpenCall?.addEventListener('click', () => {
 const btnShoot = document.getElementById('btnShoot');
 const openCallHome = document.getElementById('openCallHome');
 const shootContent = document.getElementById('shootContent');
+const openCallSubtitle = document.getElementById('openCallSubtitle');
 
 btnShoot?.addEventListener('click', () => {
   openCallHome.style.display = 'none';
   shootContent.style.display = 'block';
+  openCallSubtitle.style.display = 'none';
 });
 
 shootContent.style.display = 'none';
@@ -227,5 +229,15 @@ backToChoices?.addEventListener('click', () => {
 
   shootContent.style.display = 'none';
 
+  exceptionContent.style.display = 'none';
+});
+
+
+const backToChoicesException = document.getElementById('backToChoicesException');
+
+backToChoicesException?.addEventListener('click', () => {
+  openCallHome.style.display = 'block';
+
+  shootContent.style.display = 'none';
   exceptionContent.style.display = 'none';
 });
