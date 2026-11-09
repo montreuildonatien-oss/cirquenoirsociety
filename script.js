@@ -201,11 +201,13 @@ const btnShoot = document.getElementById('btnShoot');
 const openCallHome = document.getElementById('openCallHome');
 const shootContent = document.getElementById('shootContent');
 const openCallSubtitle = document.getElementById('openCallSubtitle');
+const openCallMeta = document.getElementById('openCallMeta');
 
 btnShoot?.addEventListener('click', () => {
   openCallHome.style.display = 'none';
   shootContent.style.display = 'block';
   openCallSubtitle.style.display = 'none';
+  openCallMeta.style.display = 'none';
 });
 
 shootContent.style.display = 'none';
@@ -219,7 +221,9 @@ const exceptionContent = document.getElementById('exceptionContent');
 btnException?.addEventListener('click', () => {
   openCallHome.style.display = 'none';
   exceptionContent.style.display = 'block';
-}); 
+  openCallSubtitle.style.display = 'none';
+  openCallMeta.style.display = 'none';
+});
 
 
 const backToChoices = document.getElementById('backToChoices');
@@ -230,6 +234,11 @@ backToChoices?.addEventListener('click', () => {
   shootContent.style.display = 'none';
 
   exceptionContent.style.display = 'none';
+
+  openCallSubtitle.style.display = 'block';
+
+  openCallSubtitle.style.display = 'block';
+openCallMeta.style.display = 'block';
 });
 
 
@@ -240,4 +249,9 @@ backToChoicesException?.addEventListener('click', () => {
 
   shootContent.style.display = 'none';
   exceptionContent.style.display = 'none';
+
+  openCallSubtitle.style.display = 'block';
+
+  openCallSubtitle.style.display = 'block';
+openCallMeta.style.display = 'block';
 });

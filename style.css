@@ -1211,11 +1211,11 @@ color:rgba(235, 212, 147, 0.009);
 
   color:#C6A86B;
 
-  font-size:11px;
-  letter-spacing:.20em;
+  font-size:17px;
+  letter-spacing:.14em;
   text-transform:uppercase;
 
-  padding:8px 12px;
+  padding:3px 4px;
 
   border-radius:999px;
 
@@ -1255,4 +1255,15 @@ color:rgba(235, 212, 147, 0.009);
 
   font-size:12px;
   letter-spacing:.20em;
+}
+
+
+.open-call-meta{
+  margin-top:12px;
+
+  color:#F5F1E8;
+
+  font-size:12px;
+  letter-spacing:.08em;
+  line-height:1.6;
 }
