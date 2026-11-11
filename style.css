@@ -36,10 +36,15 @@ overflow: hidden;
 .btn:hover{transform:translateY(-1px);border-color:rgba(255,255,255,.22)}.btn--lg{padding:12px 16px;border-radius:16px;font-size:14px}.btn--ghost{background:rgba(255,255,255,.02);color:rgba(200,169,107,.70);}
 
 .btn--gold{
-  background:#C6A86B;
-  color:#16110A;
-  border-color:#C6A86B;
+  background:transparent;
+  color:#C6A86B;
+  border:1px solid rgba(198,168,107,.35);
   box-shadow:none;
+}
+
+.btn--gold:hover{
+  background:rgba(198,168,107,.08);
+  border-color:#C6A86B;
 }
 
 .btn--red{background:linear-gradient(135deg,#c6a464,#b89147);color:#16110A;border-color:rgba(200,162,74,.75);box-shadow: 0 10px 40px rgba(240,213,138,0.25);}
@@ -78,6 +83,20 @@ overflow: hidden;
 /* HERO SUBTITLE - meme si presque vide aujourd'hui */
 .subtitle{margin:14px auto 26px;max-width:760px;color:var(--muted);font-size:16px;line-height:1.65}
 
+/* HERO meta */
+.hero-meta{
+  margin-top:-40px;
+
+  text-align:center;
+
+  color:rgba(198,168,107,.85);
+
+  font-size:11px;
+  font-weight:500;
+
+  letter-spacing:.25em;
+  text-transform:uppercase;
+}
 
 
 
@@ -174,12 +193,23 @@ rgba(12,12,17,.45)
   }
 
   .open-call-btn{
-  position:relative;
-  top:13px;
-  color:#C6A86B;
-  border:1px solid rgba(198,168,107,.35);
-  padding:10px 14px;
+  background:#8B0000;
+
+  color:#F5F1E8;
+
+  border:1px solid #8B0000;
+
+  padding:8px 12px;
+
   border-radius:999px;
+
+  text-decoration:none;
+
+  line-height:1.1;
+
+  letter-spacing:.15em;
+
+  text-transform:uppercase;
 }
 }
 
@@ -434,13 +464,13 @@ button {
 
 
 .subtitle.tertiary{
-  margin-top:2px;
-  font-size:34px;          /* un peu plus grand */
+  margin-top:20px;
+  font-size:22px;          /* un peu plus grand */
   letter-spacing:0.12em;   /* plus resserré */
   opacity:1;
   color:#F5F1E8;           /* blanc cassé */
   text-transform:uppercase;
-  margin-bottom:80px;
+  margin-bottom:100px;
 }
 
 
@@ -485,7 +515,7 @@ button {
   .lang-switch{
     position:absolute;
     right:0;
-    top:34px;
+    top:39px;
   }
 
 
@@ -1091,34 +1121,33 @@ color:rgba(235, 212, 147, 0.009);
 
 /* OPEN CALL MODAL */
 .open-call-btn{
-  border:none;
-  background:none;
-    line-height:1.1;
+  background:#C6A86B;
+  color:#16110A;
 
-    
-  opacity:1;
+  border:1px solid #C6A86B;
 
-  color:#C6A86B;
+  line-height:1.1;
 
-  font-size:10px;
+  font-size:12px;
+    font-weight:700;      /* gras */
   letter-spacing:.15em;
   text-transform:uppercase;
-
   text-decoration:none;
 
-  transition:.25s ease;
-  
-  border:1px solid rgba(198,168,107,.35);
-  padding:6px 6px;
+  padding:6px 8px;
   border-radius:999px;
 
-    top:2px;
+  transition:.25s ease;
 
+  opacity:1;
+  top:2px;
 }
 
 
 .open-call-btn:hover{
-  color:#E2C98F;
+  background:#D6B87B;
+  border-color:#D6B87B;
+  color:#16110A;
 }
 
 
@@ -1133,8 +1162,15 @@ color:rgba(235, 212, 147, 0.009);
 }
 
 .open-call-sub{
+  display:block;
+  margin-top:2px;
+
   font-size:9px;
-  opacity:.7;
+  font-weight:600;
+
+  color:rgba(22,17,10,.70);
+
+  letter-spacing:.12em;
 }
 
 
@@ -1267,3 +1303,6 @@ color:rgba(235, 212, 147, 0.009);
   letter-spacing:.08em;
   line-height:1.6;
 }
+
+
+
