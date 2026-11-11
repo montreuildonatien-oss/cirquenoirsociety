@@ -547,6 +547,10 @@ button {
   margin-bottom:270px;
 }
 
+#the-circle h2{
+  display:none;
+}
+
 /* MODAL CONTENT */
 .modal-content{
   margin-top:-10px;
@@ -708,11 +712,11 @@ body{
 
 
 .gallery3 img{
-min-height:400px;
+  min-height:600px;
   object-fit:cover;
-    width:840px;
-      object-position:center 15%;
-
+  width:840px;
+  object-position:center 15%;
+}
 
 
 
