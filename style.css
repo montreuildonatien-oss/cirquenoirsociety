@@ -1418,3 +1418,46 @@ color:rgba(235, 212, 147, 0.009);
 
   opacity:.7;
 }
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-threads-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: visible;
+}
+
+.hero-threads-svg .wire {
+  fill: none;
+  stroke: #C6A86B;
+  stroke-width: 1;
+  stroke-opacity: 0.35;
+  stroke-linecap: round;
+  transform-origin: top center;
+  transform-box: fill-box;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.w1 { animation: sway-a 7s ease-in-out infinite alternate; }
+.w2 { animation: sway-b 8.5s ease-in-out infinite alternate; }
+.w3 { animation: sway-c 6.5s ease-in-out infinite alternate; }
+.w4 { animation: sway-d 9s ease-in-out infinite alternate; }
+.w5 { animation: sway-e 7.5s ease-in-out infinite alternate; }
+
+@keyframes sway-a { from { transform: rotate(-0.6deg); } to { transform: rotate(0.6deg); } }
+@keyframes sway-b { from { transform: rotate(0.7deg); } to { transform: rotate(-0.7deg); } }
+@keyframes sway-c { from { transform: rotate(-0.5deg); } to { transform: rotate(0.5deg); } }
+@keyframes sway-d { from { transform: rotate(0.6deg); } to { transform: rotate(-0.6deg); } }
+@keyframes sway-e { from { transform: rotate(-0.7deg); } to { transform: rotate(0.7deg); } }
