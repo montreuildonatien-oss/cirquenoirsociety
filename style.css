@@ -540,6 +540,8 @@ button {
     padding: 90px 16px 40px;
   }
 
+  
+
 
 /* THE CIRCLE */
 #cercle-noir{
@@ -705,7 +707,7 @@ body{
   grid-template-columns:1fr;
   gap:12px;
   margin-top:50px;
-  margin-bottom:60px;
+  margin-bottom:-8px;
 
 }
 
@@ -816,6 +818,7 @@ body{
   top:11px;
   
 }
+
 }
 
 /* END MOBILE - CARDS + FORM */
@@ -1110,6 +1113,7 @@ color:rgba(235, 212, 147, 0.009);
     transform:translateY(-50%);
   }
 
+
 }
 
 
@@ -1308,5 +1312,46 @@ color:rgba(235, 212, 147, 0.009);
   line-height:1.6;
 }
 
+.chapters-tease{
+  display:block;
+  margin-top:6px;
+
+  font-size:12px;
+  color:rgba(244,240,234,.35);
+
+  letter-spacing:.04em;
+  font-style:italic;
+}
+
+
+.story-divider{
+  width:25px;
+  height:1px;
+
+  background:rgba(198,168,107,.7);
+
+  margin:20px 0 20px 4px;
+
+  opacity:.7;
+}
+
+
+#modalJoinCircle{
+  display:block;
+  margin:15px auto 0;
+}
+
+.door-line{
+  margin-top:24px;
+}
+
+
+@media (max-width:768px){
+
+  #TheCercleNoirForm .btn--lg{
+    margin:0 auto;
+  }
+
+}
 
 
