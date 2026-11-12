@@ -739,7 +739,7 @@ body{
     contrast(1.05);
 
   transition:.3s ease;
-}
+
 
 .gallery3 img:hover{
   transform:translateY(-4px);
@@ -1363,6 +1363,12 @@ color:rgba(235, 212, 147, 0.009);
     margin:0 auto;
   }
 
+  #shootContent .form__actions,
+#exceptionContent .form__actions{
+  display:flex;
+  justify-content:center;
+}
+
 }
 
 
@@ -1461,3 +1467,5 @@ color:rgba(235, 212, 147, 0.009);
 @keyframes sway-c { from { transform: rotate(-0.5deg); } to { transform: rotate(0.5deg); } }
 @keyframes sway-d { from { transform: rotate(0.6deg); } to { transform: rotate(-0.6deg); } }
 @keyframes sway-e { from { transform: rotate(-0.7deg); } to { transform: rotate(0.7deg); } }
+
+
