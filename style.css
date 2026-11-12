@@ -161,7 +161,7 @@ rgba(12,12,17,.45)
 /* MODAL */
 .modal{position:fixed;inset:0;display:none;z-index:20}.modal[aria-hidden='false']{display:block}
 .modal__overlay{position:absolute;inset:0;background:rgba(0,0,0,.95);backdrop-filter:blur(6px)}
-.modal__panel{position:relative;margin:10svh auto 0;width:min(800px,calc(100% - 24px));min-height:410px;border-radius:26px;border:1px solid rgba(255,255,255,.10);background:linear-gradient(180deg,rgba(12,12,17,.92),rgba(12,12,17,.72));box-shadow:var(--shadow);padding:16px}
+.modal__panel{position:relative;margin:2svh auto 0;width:min(800px,calc(100% - 24px));min-height:410px;border-radius:26px;border:1px solid rgba(255,255,255,.10);background:linear-gradient(180deg,rgba(12,12,17,.92),rgba(12,12,17,.72));box-shadow:var(--shadow);padding:16px}
 .modal__head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}
 .modal__kicker{font-size:12px;color:rgba(240,213,138,.85);letter-spacing:.14em;text-transform:uppercase}
 .modal__title{margin:4px 0 0;font-family:var(--serif);font-size:24px}
@@ -211,6 +211,16 @@ rgba(12,12,17,.45)
 
   text-transform:uppercase;
 }
+
+@media (min-width:769px){
+
+  .modal__panel{
+    max-height:90vh;
+    overflow-y:auto;
+  }
+
+}
+
 }
 
 .open-call-btn--form::after{
@@ -959,6 +969,7 @@ animation: withinGlow 15s ease-in-out infinite;
 ===================================== */
 .within-word{
   position:absolute;
+  display:none;
 
   left:50%;
   top:70%;
@@ -1189,7 +1200,7 @@ color:rgba(235, 212, 147, 0.009);
 
   width:100%;
 
-  padding:18px;
+  padding:14px;
 
   margin-bottom:14px;
 
@@ -1355,3 +1366,55 @@ color:rgba(235, 212, 147, 0.009);
 }
 
 
+
+.within-open-call{
+  display:inline-block;
+
+  margin-top:100px;
+
+  padding:14px 20px;
+
+  border:1px solid #d59c2b;
+  border-radius:999px;
+
+  background:transparent;
+
+  color:#c1af89;
+
+  font-size:11px;
+  font-weight:450;
+
+  letter-spacing:.18em;
+  text-transform:uppercase;
+
+  text-align:center;
+  text-decoration:none;
+
+  transition:.25s ease;
+}
+
+.within-open-call:hover{
+  color:#D9C08A;
+  border-color:#D9C08A;
+    transform:translateY(-30px);
+
+}
+
+
+
+.within-open-call:hover{
+  color:#D9C08A;
+}
+
+
+
+.contest-divider{
+  width:40px;
+  height:1px;
+
+  background:rgba(198,168,107,.7);
+
+  margin:24px 0;
+
+  opacity:.7;
+}

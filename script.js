@@ -139,6 +139,12 @@ document.getElementById("lang-fr").addEventListener("click", (e) => {
   document.querySelectorAll("[data-fr]").forEach(el => {
 el.innerHTML = el.dataset.fr;  });
 
+document.querySelectorAll(".exception-en").forEach(el => el.style.display = "none");
+document.querySelectorAll(".exception-fr").forEach(el => el.style.display = "block");
+document.querySelectorAll(".shoot-en").forEach(el => el.style.display = "none");
+document.querySelectorAll(".shoot-fr").forEach(el => el.style.display = "block");
+
+
   document.getElementById("lang-fr").classList.add("active");
   document.getElementById("lang-en").classList.remove("active");
 });
@@ -149,9 +155,16 @@ document.getElementById("lang-en").addEventListener("click", (e) => {
   document.querySelectorAll("[data-en]").forEach(el => {
 el.innerHTML = el.dataset.en;  });
 
+document.querySelectorAll(".exception-en").forEach(el => el.style.display = "block");
+document.querySelectorAll(".exception-fr").forEach(el => el.style.display = "none");
+document.querySelectorAll(".shoot-en").forEach(el => el.style.display = "block");
+document.querySelectorAll(".shoot-fr").forEach(el => el.style.display = "none");
+
   document.getElementById("lang-en").classList.add("active");
   document.getElementById("lang-fr").classList.remove("active");
 });
+
+
 
 
 
@@ -193,6 +206,14 @@ modalOpenCall?.addEventListener('click', () => {
   document.getElementById('cercle-noir')
     ?.scrollIntoView({ behavior: 'smooth' });
 });
+
+const openCallBtnWithin = document.getElementById('openCallBtnWithin');
+
+openCallBtnWithin?.addEventListener('click', (e) => {
+  e.preventDefault();
+  openOpenCallModal();
+});
+
 
 
 // concours I shoot / I am

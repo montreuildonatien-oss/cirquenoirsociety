@@ -281,6 +281,15 @@
     BLACK IS THE RULE.<br> RED IS THE EXCEPTION.
   </div>
 
+<a
+  href="#"
+  class="within-open-call"
+  id="openCallBtnWithin"
+  data-en="THERE ARE OTHER WAYS IN ↗"
+  data-fr="IL EXISTE D'AUTRES PORTES ↗">
+  THERE ARE OTHER WAYS IN ↗
+</a>
+
 </div>
 
   </div>
@@ -319,7 +328,7 @@
 
 <p
   class="lead secondary"
-  data-en="Some enter it. All keep it between us."
+  data-en="Some enter it.<br><br> All keep it between us."
   data-fr="D'autres y entrent. <br><br> Tous gardent ça pour eux.">
   Some enter it.<br><br>
   All keep it between us.
@@ -503,9 +512,8 @@
 </div>
 
 
+
   <!-- OPEN CALL MODAL -->
-
-
 
   <div class="modal" id="openCallModal" aria-hidden="true">
 
@@ -525,7 +533,11 @@
   Open Call
 </div>
 
-<div id="openCallMeta" class="open-call-meta">
+<div
+  id="openCallMeta"
+  class="open-call-meta"
+  data-en="Intimate. Nice, Côte d'Azur.<br>60. Masked. No phones."
+  data-fr="Intimiste. Nice, Côte d'Azur.<br>60. Masqués. No phones.">
   Intimate. Nice, Côte d'Azur.<br>
   60. Masked. No phones.
 </div>
@@ -569,10 +581,12 @@
   <button id="btnShoot" class="open-call-choice">
   <span>I SHOOT</span><br>
   <strong>BE OUR EYES</strong><br>
-<small>
-  Looking for photographers<br>
+<small
+  data-en="Looking for photographers"
+  data-fr="Recherche photographes">
+  Looking for photographers<br></small>
   <span class="open-call-funnel">20 → 10 → 2</span>
-</small></button>
+</button>
 
 
   <br>
@@ -580,14 +594,18 @@
 <button id="btnException" class="open-call-choice">
   <span>I AM</span><br>
   <strong>BE THE EXCEPTION</strong><br>
-<small>
-  Who will be the exception?<br>
-  <span class="open-call-funnel">20 → 10 → 1</span>
-</small></button>
+<small
+  data-en="Who will be the exception?"
+  data-fr="Qui sera l'exception ?">
+  Who will be the exception?<br></small>
+  <span class="open-call-funnel">20 → 5 → 1</span>
+</button>
 
 
 </div>
 
+
+  <!-- OPEN CALL - SHOOT -->
 
 <div id="shootContent" style="display:none;">
 
@@ -599,21 +617,18 @@
   BE OUR EYES
 </h3>
 
-<p class="door-line">
+<p
+  class="door-line"
+  data-en="Looking for photographers"
+  data-fr="Recherche photographes">
   Looking for photographers
 </p>
+<br><br>
 
 
 
-<p
 
-data-en="TO ENTER:<br><br><span class='gold'>1.</span> Join The Circle<br><br><span class='gold'>2.</span> Follow @cirquenoirsociety<br><br><span class='gold'>3.</span> Post your best shot, tag us<br>+ send it in DM<br><br>Theme:<br>BLACK IS THE RULE.<br>RED IS THE EXCEPTION.<br><br><br>The <span class='gold'>20</span> best entries will be featured on our IG.<br><span class='gold'>10</span> finalists will be revealed.<br><span class='gold'>2</span> will enter Act I.<br>Winner could become the gaze of Cirque Noir."
-
-data-fr="
-<span class='gold-title'>POUR PARTICIPER :</span> <br><br><span class='gold'>1.</span> Rejoindre Le Cercle<br><br><span class='gold'>2.</span> Suivre @cirquenoirsociety<br><br><span class='gold'>3.</span> Poster ta meilleure photo, nous taguer<br>+ l'envoyer en DM<br><br>
-<span class='gold-title'>Thème :</span><br>LE NOIR EST LA RÈGLE.<br>LE ROUGE EST L'EXCEPTION.<br><br><br>Les <span class='gold'>20</span> meilleures photos seront mises en avant.<br><span class='gold'>10</span> finalistes seront révélés.<br><span class='gold'>2</span> entreront à l'Acte I.<br>Le gagnant pourrait devenir le regard de Cirque Noir."
-
-  Act I — Spring 2027.<br>
+<div class="shoot-en">
 
 
 <span class="gold-title">TO ENTER:</span><br><br>
@@ -625,15 +640,52 @@ data-fr="
   <span class="gold">3.</span> Post your best shot + tag us<br>
 &nbsp;&nbsp;&nbsp;&nbsp;+ send it in DM<br><br>
 
-<span class="gold-title">Theme:</span><br>
+<span class="gold-title">Theme:</span><br><br>
+
 
   BLACK IS THE RULE.<br>
   RED IS THE EXCEPTION.<br><br><br>
 
-<span class="gold">20</span> best shots featured on our IG.<br>
+  <div class="contest-divider"></div>
+
+
+
+  <span class="gold">20</span> best shots featured on our IG.<br>
 <span class="gold">5</span> finalists revealed with their profile + shot.<br>
 <span class="gold">2</span> will shoot Act I.<br><br>
 Winner could become the gaze of Cirque Noir.
+
+</div>
+
+
+
+<div class="shoot-fr" style="display:none;">
+
+<span class="gold-title">POUR PARTICIPER :</span><br><br>
+
+<span class="gold">1.</span> Rejoindre Le Cercle<br><br>
+
+<span class="gold">2.</span> Suivre @cirquenoirsociety<br><br>
+
+<span class="gold">3.</span> Poster ta meilleure photo + nous taguer<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+ l'envoyer en DM<br><br>
+
+<span class="gold-title">Thème :</span><br><br><br>
+
+LE NOIR EST LA RÈGLE.<br>
+LE ROUGE EST L'EXCEPTION.<br><br><br>
+
+<div class="contest-divider"></div>
+
+<span class="gold">20</span> meilleures photos mises en avant sur notre Instagram.<br>
+<span class="gold">5</span> finalistes révélés avec leur profil et leur photo.<br>
+<span class="gold">2</span> photographieront l'Acte I.<br><br>
+
+Le gagnant pourrait devenir le regard de Cirque Noir.
+
+</div>
+
+
 
 <div class="form__actions">
 
@@ -652,51 +704,102 @@ Winner could become the gaze of Cirque Noir.
 
 
 
+  <!-- OPEN CALL - EXCEPTION -->
+
 <div id="exceptionContent" style="display:none;">
 
   <button id="backToChoicesException" class="back-choice">
   ←
 </button>
 
+
   <h3 class="modal__title">
   BE THE EXCEPTION
 </h3>
 
-<p class="door-line">
-Who will be the exception?
-</p>
-
-
-
 <p
+  class="door-line"
+  data-en="Who will be the exception?"
+  data-fr="Qui sera l'exception ?">
+  Who will be the exception?
+</p>
+<br><br>
 
-data-en="TO ENTER:<br><br><span class='gold'>1.</span> Join The Circle<br><br><span class='gold'>2.</span> Follow @cirquenoirsociety<br><br><span class='gold'>3.</span> Post your best shot, tag us<br>+ send it in DM<br><br>Theme:<br>BLACK IS THE RULE.<br>RED IS THE EXCEPTION.<br><br><br>The <span class='gold'>20</span> best entries will be featured on our IG.<br><span class='gold'>10</span> finalists will be revealed.<br><span class='gold'>2</span> will enter Act I.<br>Winner could become the gaze of Cirque Noir."
 
-data-fr="
-<span class='gold-title'>POUR PARTICIPER :</span> <br><br><span class='gold'>1.</span> Rejoindre Le Cercle<br><br><span class='gold'>2.</span> Suivre @cirquenoirsociety<br><br><span class='gold'>3.</span> Poster ta meilleure photo en noir avec une touche de rouge, nous taguer<br>+ l'envoyer en DM<br><br>
-<span class='gold-title'>Thème :</span><br>SOIS L'EXCEPTION.<br><br><span class='gold'>20</span> meilleures photos seront postées dans nos stories.<br><span class='gold'>5</span> finalistes seront révélés sur notre feed.<br><br>
-<span style='color:#E5383B;font-weight:700;'>1</span> sera l'exception,<br>le seul à être habillé <span style='color:#E5383B;font-weight:700;'>en rouge</span> lors de l'Acte I.<br><br>"
 
-  Act I — Spring 2027.<br>
- 
 
-<span class="gold-title">TO ENTER:</span><br><br>
+ <div class="exception-en">
+
+  <span class="gold-title">TO ENTER:</span><br><br>
 
   <span class="gold">1.</span> Join The Circle<br><br>
 
   <span class="gold">2.</span> Follow @cirquenoirsociety<br><br>
 
-<span class="gold">3.</span> Post your best shot in black with one touch of red + tag us<br>
-&nbsp;&nbsp;&nbsp;&nbsp;+ send it in DM<br><br>
+  <span class="gold">3.</span> Post your best shot in black with one touch of red + tag us<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;+ send it in DM<br><br>
 
-<span class="gold-title">Theme:</span><br>
+  <span class="gold-title">Theme:</span><br><br>
 
   BE THE EXCEPTION.<br><br><br>
 
-<span class="gold">20</span> best entries featured in our stories.<br>
-<span class="gold">5</span> finalists revealed on our feed.<br><br>
-<span style="color:#E5383B;font-weight:700;">1</span> will be the exception,<br>
-the only one dressed <span style="color:#E5383B;font-weight:700;">in red</span> at Act I.<br>
+  <div class="contest-divider"></div>
+
+  <span class="gold">20</span> best entries featured in our stories.<br>
+  <span class="gold">5</span> finalists revealed on our feed.<br><br><br><br>
+
+  <span style="color:#E5383B;font-weight:800;font-size:23px;">1</span>
+  <span style="font-size:18px;font-weight:700;">
+    WILL BE THE EXCEPTION
+  </span>
+
+  <br><br>
+
+  <span style="font-style:italic;font-size:15px;color:#C6A86B;">
+    the only one dressed
+    <span style="color:#E5383B;font-weight:700;">in red</span>
+    at Act I.
+  </span>
+
+</div>
+
+
+<div class="exception-fr" style="display:none;">
+
+  <span class="gold-title">POUR PARTICIPER :</span><br><br>
+
+  <span class="gold">1.</span> Rejoindre Le Cercle<br><br>
+
+  <span class="gold">2.</span> Suivre @cirquenoirsociety<br><br>
+
+  <span class="gold">3.</span> Poster ta meilleure photo en noir avec une touche de rouge, nous taguer<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;+ l'envoyer en DM<br><br>
+
+  <span class="gold-title">Thème :</span><br><br>
+
+  SOIS L'EXCEPTION.<br><br><br>
+
+  <div class="contest-divider"></div>
+
+  <span class="gold">20</span> meilleures photos seront postées dans nos stories.<br>
+  <span class="gold">5</span> finalistes seront révélés sur notre feed.<br><br><br><br>
+
+  <span style="color:#E5383B;font-weight:800;font-size:23px;">1</span>
+  <span style="font-size:18px;font-weight:700;">
+    SERA L'EXCEPTION
+  </span>
+
+  <br><br>
+
+  <span style="font-style:italic;font-size:15px;color:#C6A86B;">
+    le seul à être habillé
+    <span style="color:#E5383B;font-weight:700;">en rouge</span>
+    lors de l'Acte I.
+  </span>
+
+</div>
+
+
 
 <div class="form__actions">
 
