@@ -69,11 +69,11 @@ overflow: hidden;
 .title__mid{
   display:block;
   font-size:92px;
-  background: linear-gradient(180deg, #F0D58A, #C8A24A);
+  background: linear-gradient(180deg, #FFF9E3 0%, #F2E2B0 22%, #D6B878 42%, #C3A182 62%, #8A6F3E 100%);
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
-  filter: none;
+  filter: drop-shadow(0 2px 14px rgba(215, 185, 105, 0.28)) drop-shadow(0 1px 0 rgba(255, 246, 220, 0.25));
   text-shadow: none;
   animation: none;
 }
@@ -474,7 +474,7 @@ button {
 
 
 .subtitle.tertiary{
-  margin-top:20px;
+  margin-top:10px;
   font-size:22px;          /* un peu plus grand */
   letter-spacing:0.12em;   /* plus resserré */
   opacity:1;
@@ -487,7 +487,7 @@ button {
 
 /* HERO LOGO */
 .hero-logo {
-  width: 160px;
+  width: 170px;
   height: auto;
   display: block;
   margin: 0 auto -10px;
@@ -499,7 +499,8 @@ button {
 
 
   .hero-logo{
-    width: 110px;
+    width: 100px;
+    margin-bottom:2px;
   }
 
   .title__top{
@@ -826,10 +827,10 @@ body{
 .open-call-btn{
   position:relative;
   top:11px;
-  
+}
 }
 
-}
+
 
 /* END MOBILE - CARDS + FORM */
 
@@ -990,7 +991,7 @@ color:rgba(235, 212, 147, 0.009);
 @media (max-width:768px){
 
   .subtitle.tertiary{
-    margin-top:50px;
+    margin-top:20px;
   }
 
 
@@ -1132,7 +1133,7 @@ color:rgba(235, 212, 147, 0.009);
     TOPBAR - LOGO
 ===================================== */
 .topbar-logo{
-  width:38px;
+  width:23px;
   height:auto;
   display:block;
 }
@@ -1140,20 +1141,20 @@ color:rgba(235, 212, 147, 0.009);
 
 /* OPEN CALL MODAL */
 .open-call-btn{
-  background:#C6A86B;
+  background: linear-gradient(180deg, #E8DCC2 0%, #C9B99A 55%, #B3A284 100%);
   color:#16110A;
 
-  border:1px solid #C6A86B;
+  border:1px solid #C9B99A;
 
   line-height:1.1;
 
-  font-size:12px;
+  font-size:10px;
     font-weight:700;      /* gras */
   letter-spacing:.15em;
   text-transform:uppercase;
   text-decoration:none;
 
-  padding:6px 8px;
+  padding:5px 7px;
   border-radius:999px;
 
   transition:.25s ease;
@@ -1444,8 +1445,8 @@ color:rgba(235, 212, 147, 0.009);
 .hero-threads-svg .wire {
   fill: none;
   stroke: #C6A86B;
-  stroke-width: 1;
-  stroke-opacity: 0.35;
+  stroke-width: 1.5;
+  stroke-opacity: 0.50;
   stroke-linecap: round;
   transform-origin: top center;
   transform-box: fill-box;
