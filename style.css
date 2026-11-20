@@ -69,11 +69,11 @@ overflow: hidden;
 .title__mid{
   display:block;
   font-size:92px;
-  background: linear-gradient(180deg, #FFF9E3 0%, #F2E2B0 22%, #D6B878 42%, #C3A182 62%, #8A6F3E 100%);
+  background: linear-gradient(180deg, #FFFBEB 0%, #EADFC2 18%, #C9B99A 38%, #C3A182 55%, #9A8A6B 78%, #6E5A35 100%);
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
-  filter: drop-shadow(0 2px 14px rgba(215, 185, 105, 0.28)) drop-shadow(0 1px 0 rgba(255, 246, 220, 0.25));
+  filter: drop-shadow(0 4px 20px rgba(195, 161, 130, 0.35)) drop-shadow(0 1px 0 rgba(255, 251, 235, 0.35));
   text-shadow: none;
   animation: none;
 }
