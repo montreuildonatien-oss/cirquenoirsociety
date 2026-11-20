@@ -65,10 +65,43 @@ overflow: hidden;
 }
 
 /* HERO TITLE - c'est le cirque noir geant */
-.title{margin:0;font-family:var(--serif);line-height:.92;letter-spacing:.06em;text-transform:uppercase}.title__top{display:block;font-size:46px;color:rgba(244,240,234,.85)}
+.title{
+  margin:0;
+  line-height:.92;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  position:relative;
+}
+
+/* Fil doré fantôme qui traverse le titre - subtil, on le remarque à la 3ème visite */
+.title::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:-10px;
+  bottom:-10px;
+  width:1px;
+  background: linear-gradient(180deg, transparent, rgba(198,168,107,0.35), rgba(198,168,107,0.35), transparent);
+  transform:translateX(-50%);
+  pointer-events:none;
+  z-index:0;
+}
+
+.title__top{
+  display:block;
+  font-family:'Cormorant Garamond', serif;
+  font-weight:500;
+  font-size:46px;
+  letter-spacing:.35em;
+  color:rgba(244,240,234,.85);
+}
+
 .title__mid{
   display:block;
+  font-family:'Playfair Display', serif;
+  font-weight:700;
   font-size:92px;
+  letter-spacing:.01em;
   background: linear-gradient(180deg, #FFFBEB 0%, #EADFC2 18%, #C9B99A 38%, #C3A182 55%, #9A8A6B 78%, #6E5A35 100%);
   -webkit-background-clip:text;
   background-clip:text;
@@ -78,7 +111,27 @@ overflow: hidden;
   animation: none;
 }
 
-.title__bot{display:block;font-size:36px;color:rgba(244,240,234,.82)}
+.title__bot{
+  display:block;
+  font-family:'Inter', sans-serif;
+  font-weight:500;
+  font-size:18px;
+  letter-spacing:.48em;
+  color:rgba(244,240,234,.82);
+}
+
+/* Trait velours bordeaux sous le titre - le point fort NONE */
+.title::after{
+  display:none
+  content:"";
+  display:block;
+  width:20px;
+  height:2px;
+  margin:20px auto 0;
+  background: linear-gradient(90deg, transparent, #2e040b 20%, #38050d 50%, #38050d 80%, transparent);
+    box-shadow: 0 0 14px rgba(57, 1, 10, 0.779);
+  border-radius:1px;
+}
 
 /* HERO SUBTITLE - meme si presque vide aujourd'hui */
 .subtitle{margin:14px auto 26px;max-width:760px;color:var(--muted);font-size:16px;line-height:1.65}
