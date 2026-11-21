@@ -1536,7 +1536,7 @@ color:rgba(235, 212, 147, 0.009);
   /* 1. On resserre le hero mobile pour qu'il fasse UN bloc */
   .hero-music-line{
     margin-top:14px;  /* avant 40px -> on remonte la phrase */
-    font-size:20px;   /* avant 23px -> un poil plus petit, plus facile à lire */
+    font-size:19px;   /* avant 23px -> un poil plus petit, plus facile à lire */
     line-height:1.45;
   }
   .hero-meta{
