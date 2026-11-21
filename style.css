@@ -136,20 +136,7 @@ overflow: hidden;
 /* HERO SUBTITLE - meme si presque vide aujourd'hui */
 .subtitle{margin:14px auto 26px;max-width:760px;color:var(--muted);font-size:16px;line-height:1.65}
 
-/* HERO meta */
-.hero-meta{
-  margin-top:-40px;
 
-  text-align:center;
-
-  color:rgba(198,168,107,.85);
-
-  font-size:11px;
-  font-weight:500;
-
-  letter-spacing:.25em;
-  text-transform:uppercase;
-}
 
 
 
@@ -526,15 +513,10 @@ button {
 }
 
 
-.subtitle.tertiary{
-  margin-top:10px;
-  font-size:22px;          /* un peu plus grand */
-  letter-spacing:0.12em;   /* plus resserré */
-  opacity:1;
-  color:#F5F1E8;           /* blanc cassé */
-  text-transform:uppercase;
-  margin-bottom:100px;
-}
+
+
+
+
 
 
 
@@ -1523,3 +1505,59 @@ color:rgba(235, 212, 147, 0.009);
 @keyframes sway-e { from { transform: rotate(-0.7deg); } to { transform: rotate(0.7deg); } }
 
 
+.hero-music-line{
+  text-align:center;
+  font-family:'Cormorant Garamond', serif;
+  font-style:italic;
+  letter-spacing:.07em;
+  margin:40px auto 0;      /* avant 24px -> plus d'air après SOCIETY */
+  font-weight:400;         /* avant 500 -> plus léger */
+  font-size:20px;          /* avant 24px -> un poil plus fin */
+  color:rgba(239, 226, 198, 0.95); /* avant 1 -> un poil plus doux */
+}
+
+
+
+.hero-meta{
+    text-align:center;
+  font-family:'Inter', sans-serif;
+  font-weight:500;
+  font-size:10.5px;
+  letter-spacing:.42em;
+  line-height:2.2;
+  text-transform:uppercase;
+  margin:38px auto 0;      /* avant 22px -> plus d'air en bas */
+  color:rgba(244, 240, 234, .50); /* avant .85 -> plus léger */
+}
+
+
+
+@media (max-width: 768px){
+  /* 1. On resserre le hero mobile pour qu'il fasse UN bloc */
+  .hero-music-line{
+    margin-top:14px;  /* avant 40px -> on remonte la phrase */
+    font-size:20px;   /* avant 23px -> un poil plus petit, plus facile à lire */
+    line-height:1.45;
+  }
+  .hero-meta{
+    margin-top:34px;  /* avant 26px */
+  }
+}
+
+
+
+
+@media (max-width: 768px){
+  .hero-threads-svg{
+    transform: scaleX(1.05);
+    transform-origin: center top;
+
+     /* Tes fils bougent, sans sortir de l'écran */
+  .hero-threads-svg .wire{
+    transform-origin: top center;
+    transform-box: fill-box;
+    animation: fil-respire 7s ease-in-out infinite alternate;
+  }
+
+  }
+}
