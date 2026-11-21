@@ -1546,18 +1546,34 @@ color:rgba(235, 212, 147, 0.009);
 
 
 
-
+/* ===== SCROLL FLUIDE MOBILE - à coller à la fin ===== */
 @media (max-width: 768px){
-  .hero-threads-svg{
-    transform: scaleX(1.05);
-    transform-origin: center top;
-
-     /* Tes fils bougent, sans sortir de l'écran */
-  .hero-threads-svg .wire{
-    transform-origin: top center;
-    transform-box: fill-box;
-    animation: fil-respire 7s ease-in-out infinite alternate;
+  html{
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
   }
 
+  /* On enlève les filtres lourds sur mobile */
+  .title__mid{
+    filter: none;
+  }
+  .title::after{
+    box-shadow: none;
+  }
+  .hero::before{
+    filter: none;
+  }
+
+  /* On coupe l'animation des fils sur mobile, c'est elle qui fait le plus ramer */
+  .hero-threads-svg .wire{
+    animation: none !important;
+  }
+  .hero-emblem{
+    animation: none !important;
+  }
+
+  /* Le fond ne reste plus fixe, il suit le scroll */
+  .hero{
+    background-attachment: scroll !important;
   }
 }
